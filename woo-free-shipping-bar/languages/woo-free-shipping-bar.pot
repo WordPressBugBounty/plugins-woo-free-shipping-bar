@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Free Shipping Bar for WooCommerce\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-05 09:36+0000\n"
+"POT-Creation-Date: 2024-12-11 09:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,145 +16,234 @@ msgstr ""
 "X-Loco-Version: 2.6.2; wp-6.1.1\n"
 "X-Domain: woo-free-shipping-bar"
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:786
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:919
 msgid "(Display gift box when customer add product to cart)"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/wfspb-front-end.php:371
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:919
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/wfspb-front-end.php:379
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:1052
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:105
 msgid "(incl. tax)"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:644
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:554
+msgid "Add CSS selector to make free shipping bar working with the header bar"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:620
+msgid "Allow  to show the close icon on the free shipping bar"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:604
+msgid "Allow Display gift icon for the free shipping bar"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:628
+msgid "Allow to set time to disappear the free shipping bar"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:302
+msgid "Always show free shipping bar"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:178
+msgid ""
+"and then Add New a Shipping Zone with Free Shipping method (or Enable Free "
+"Shipping method) for your locationn before setting up the free shipping bar."
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:777
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:639
 msgid "Announce System"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:324
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:457
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:148
 msgid "Assign"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:795
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:928
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:325
 msgid "Assign pages"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:405
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:538
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:387
 msgid "Background Color"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:513
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:332
+msgid "bar on this page"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:646
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:495
 msgid "Border"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:579
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:712
 msgid "Bottom"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:454
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:587
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:430
 msgid "Center"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:799
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:330
+msgid "Checked to"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:932
 msgid "Checked to hide bar on this page"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/wfspb-front-end.php:258
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:840
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:840
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/wfspb-front-end.php:260
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:973
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:973
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:116
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:117
 msgid "Checkout"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:754
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:887
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:616
 msgid "Close message"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:803
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:379
+msgid "Color"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:310
+msgid "Compatible with cache plugin"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:936
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:337
 msgid "Conditional tags"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:479
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:612
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:466
 msgid "Current Progress Background Color"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:602
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:735
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:567
 msgid "Custom CSS"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:594
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:727
 msgid "Custom Icon"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:315
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:448
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:150
 msgid "Design"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:353
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:486
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:257
 msgid "Detect IP"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:321
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:454
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:149
 msgid "Effect"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:330
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:336
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:465
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:785
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:463
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:469
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:598
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:918
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:238
 msgid "Enable"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:365
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:498
 msgid "Enable on mobile and tablet."
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:459
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:253
+msgid "Enable on mobile."
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:592
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:438
 msgid "Enable Progress"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:429
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:314
+msgid "Enable this option if your message is cached by cache plugin"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:294
+msgid "Exclude shipping class"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:562
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:415
 msgid "Font-Family"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:437
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:570
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:424
 msgid "Font-Size"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:495
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:628
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:479
 msgid "Font-Size Progress Bar"
 msgstr ""
 
 #. Name of the plugin
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:292
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:830
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:425
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:963
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:156
 msgid "Free Shipping Bar for WooCommerce"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:341
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:474
 msgid "Free Shipping Zone"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:312
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:265
+msgid "Free Shipping Zone(*)"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:445
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:147
 msgid "General"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:356
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:364
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:378
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:386
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:393
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:400
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:590
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:597
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:750
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:757
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:764
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:771
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:798
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:806
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:497
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:511
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:519
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:526
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:533
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:723
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:730
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:883
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:890
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:897
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:904
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:931
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:939
 msgid "Get this feature"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:587
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:720
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:559
 msgid "Gift Icon"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:549
+msgid "Header selector"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:331
+msgid "hide"
 msgstr ""
 
 #. Author URI of the plugin
@@ -165,67 +254,109 @@ msgstr ""
 msgid "https://villatheme.com/"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:357
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:261
+msgid ""
+"If you enable to Detect IP then the user is accessing to your site will be "
+"automatically apply to Free Shipping zone with their IP. Note: their ip are "
+"contained in Free Shipping zone"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:490
 msgid ""
 "If you enable to Detect IP then the user is accessing to your site will be "
 "automatically apply to Free Shipping zone with their IP. Note: their ip are "
 "contained in Free Shipping zone (Don't apply with STATE)"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:598
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:731
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:563
 msgid "Image dimension should be 147 x 71(px)."
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:747
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:880
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:609
 msgid "Initial delay"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:453
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:586
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:429
 msgid "Left"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:807
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:341
+msgid "Let's control on which specific pages the shipping bar disappear using"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:940
 msgid "Lets you control on which pages disappear using WP's conditional tags."
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:421
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:554
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:401
 msgid "Link Color"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:712
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:732
+msgid "Link to cart page"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:845
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:727
 msgid "Link to checkout page"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:737
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:870
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:737
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:768
 msgid "Link to shop page"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:512
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:645
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:494
 msgid "Loading"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:318
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:451
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:151
 msgid "Message"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:719
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:852
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:742
 msgid "Message Error"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:664
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:786
+msgid "Message for multi-languages"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:773
+msgid "Message Full Free Shipping"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:797
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:666
 msgid "Message Purchased"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:698
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:831
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:705
 msgid "Message Success"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:658
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:687
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:791
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:820
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:661
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:688
 msgid "Minimum order amount Free Shipping"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:361
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:286
+msgid "Minimum value to display"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:494
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:249
 msgid "Mobile"
 msgstr ""
 
@@ -235,145 +366,270 @@ msgid ""
 "shipping bar, dynamic messages and progress tracker."
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:297
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:430
 msgid "Not exists a zone free shipping on Woocommmerce"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:511
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:644
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:493
 msgid "Plain"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:299
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:177
+msgid "Please go to"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:432
 msgid ""
 "Please go to WooCommerce -> Settings -> Shipping and then Add New a Shipping "
 "Zones with Free Shipping method (or Enable Free Shipping method) for your "
 "location."
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:133
-msgid ""
-"Please install WooCommerce and active to use Free Shipping Bar for "
-"WooCommerce plugin !"
-msgstr ""
-
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:348
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:481
 msgid "Please select zone default what you set Free Shiping method."
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:558
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:282
+msgid "Please select zone default what you set Free Shipping method."
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:691
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:524
 msgid "Position"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:383
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:516
 msgid "Position on Cart page"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:390
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:523
 msgid "Position on Checkout page"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:471
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:604
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:459
 msgid "Progress Background Color"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:506
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:639
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:490
 msgid "Progress Bar Effect"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:487
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:451
+msgid "Progress Color"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:620
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:473
 msgid "Progress Text Color"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:816
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:949
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:227
 msgid "Save"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:768
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:298
+msgid "Select shipping class to exclude when calculate subtotal"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:901
 msgid "Set time to disappear"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:147
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:128
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:282
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:282
 msgid "Settings"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/wfspb-front-end.php:257
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:624
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/wfspb-front-end.php:259
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:757
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:579
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:95
 msgid "Shopping"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:776
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:909
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:596
 msgid "Show gift box"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:379
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:371
+msgid "Show in Menu cart"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:363
+msgid "Show on single product page"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:512
 msgid "Show progress bar at bottom Cart page, Checkout page"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:401
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:359
+msgid "Show progress bar at bottom Cart page, Checkout page."
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:534
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:367
 msgid "Show progress bar below add to cart button."
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:397
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:375
+msgid "Show progress bar in Menu cart."
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:530
 msgid "Show single product page"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:375
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:508
 msgid "Small Progres Bar"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:519
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:355
+msgid "Small progress bar"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:652
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:500
 msgid "Style"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:530
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:663
 msgid "Style 1"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:540
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:673
 msgid "Style 2"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:550
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:683
 msgid "Style 3"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:449
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:407
+msgid "Text"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:582
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:432
 msgid "Text Align"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:413
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:546
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:394
 msgid "Text Color"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:691
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:733
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:290
+msgid "The minimum value in the cart to display the shipping bar"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:824
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:866
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:700
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:764
 msgid "The outstanding amount of the free shipping program"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:679
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:812
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:692
 msgid "The total amount of your purchases"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:761
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:778
+msgid "This message is used when min amount is zero"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:306
+msgid ""
+"This option will make free shipping bar show Message Full Free Shipping and "
+"ignore other condition"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:894
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:624
 msgid "Time to disappear"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:569
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:702
 msgid "Top"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:683
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:816
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:696
 msgid "Total quantity in cart."
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:489
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:194
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:252
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:260
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:289
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:297
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:305
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:313
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:328
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:340
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:358
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:366
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:374
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:552
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:562
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:612
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:619
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:627
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:731
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:736
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:776
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:789
+msgid "Upgrade This Feature"
 msgstr ""
 
 #. Author of the plugin
 msgid "VillaTheme"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:830
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:963
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:137
 msgid "WC F-Shipping Bar"
 msgstr ""
 
-#: E:/villatheme-2024/FREE-VERSION/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:623
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:170
+msgid ""
+"We're sorry, but the shipping bar cannot be enabled right now because no "
+"free shipping zone has been set up."
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:343
+msgid "Woo's conditional tags."
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:136
+msgid "WooCommerce Free Shipping Bar"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:176
+msgid "WooCommerce Shipping settings"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:342
+msgid "WP's conditional tags,"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:191
+msgid "You can use the shortcode to display shipping bar everywhere you want"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:756
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:578
 msgid "You have purchased $100 of $120. Continue"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:162
+msgid "Your settings have been saved!"
 msgstr ""

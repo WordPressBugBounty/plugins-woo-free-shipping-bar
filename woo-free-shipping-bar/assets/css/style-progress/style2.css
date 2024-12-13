@@ -1,4 +1,4 @@
-#wfspb-top-bar > #wfspb-progress {
+#wfspb-top-bar  #wfspb-progress {
 	width: 90%;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
@@ -7,20 +7,20 @@
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
-#wfspb-top-bar.top_bar > #wfspb-progress{
+#wfspb-top-bar.top_bar  #wfspb-progress{
 	bottom: -23px;
 }
-#wfspb-top-bar.bottom_bar > #wfspb-progress{
+#wfspb-top-bar.bottom_bar  #wfspb-progress{
 	top: -23px;
 }
 
-#wfspb-top-bar.bottom_bar > #wfspb-progress.wfsb-effect-2 {
+#wfspb-top-bar.bottom_bar  #wfspb-progress.wfsb-effect-2 {
 	top: -29px;
 }
-#wfspb-top-bar.top_bar > #wfspb-progress.wfsb-effect-2 {
+#wfspb-top-bar.top_bar  #wfspb-progress.wfsb-effect-2 {
 	bottom: -29px;
 }
-#wfspb-top-bar > #wfspb-progress, #wfspb-top-bar > #wfspb-progress > #wfspb-current-progress {
+#wfspb-top-bar  #wfspb-progress, #wfspb-top-bar  .wfspb-progress-background, #wfspb-top-bar  #wfspb-progress  #wfspb-current-progress {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;

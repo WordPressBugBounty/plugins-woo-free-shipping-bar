@@ -1,10 +1,10 @@
-#wfspb-top-bar > #wfspb-progress {
+#wfspb-top-bar  #wfspb-progress {
 	margin: 10px auto 0;
 	width: 90%;
 	position: relative;
 }
 
-#wfspb-top-bar > #wfspb-progress, #wfspb-top-bar > #wfspb-progress > #wfspb-current-progress {
+#wfspb-top-bar  #wfspb-progress, #wfspb-top-bar  #wfspb-progress  #wfspb-current-progress {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-ms-border-radius: 10px;

@@ -3,7 +3,7 @@
  * Plugin Name: Free Shipping Bar for WooCommerce
  * Plugin URI: https://villatheme.com/
  * Description: Motivate customers to reach the free shipping threshold with a visual free shipping bar, dynamic messages and progress tracker.
- * Version: 1.2.4
+ * Version: 1.2.5
  * Author: VillaTheme
  * Author URI: https://villatheme.com
  * License: GPLv2
@@ -13,25 +13,151 @@
  * Copyright 2017-2024 VillaTheme.com. All rights reserved.
  * Requires Plugins: woocommerce
  * Requires at least: 5.0
- * Tested up to: 6.6
+ * Tested up to: 6.7
  * WC requires at least: 7.0
- * WC tested up to: 9.0
+ * WC tested up to: 9.4
  * Requires PHP: 7.0
  */
-
-define( 'WFSPB_F_VERSION', '1.2.4' );
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-//compatible with 'High-Performance order storage (COT)'
-add_action( 'before_woocommerce_init', function() {
-    if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
-        \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
-        \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'cart_checkout_blocks', __FILE__, true );
-    }
-} );
+if (!defined('WFSPB_F_VERSION')){
+	define( 'WFSPB_F_VERSION', '1.2.5' );
+	define( 'WFSPB_F_SHIPPING_BASENAME', plugin_basename( __FILE__ ) );
+	define( 'WFSPB_F_SHIPPING_DIR', plugin_dir_path( __FILE__ ) );
+	define( 'WFSPB_F_SHIPPING_INCLUDES', WFSPB_F_SHIPPING_DIR . "includes" . DIRECTORY_SEPARATOR );
+	define( 'WFSPB_F_SHIPPING_ADMIN', WFSPB_F_SHIPPING_DIR . "admin" . DIRECTORY_SEPARATOR );
+	define( 'WFSPB_F_SHIPPING_FRONTEND', WFSPB_F_SHIPPING_DIR . "frontend" . DIRECTORY_SEPARATOR );
+	define( 'WFSPB_F_SHIPPING_LANGUAGES_DIR', WFSPB_F_SHIPPING_DIR . 'languages' . DIRECTORY_SEPARATOR );
+	$plugin_url = plugins_url( 'assets/', __FILE__ );
+	define( 'WFSPB_F_SHIPPING_CSS', $plugin_url . 'css/' );
+	define( 'WFSPB_F_SHIPPING_JS', $plugin_url . 'js/' );
+	define( 'WFSPB_F_SHIPPING_IMAGES', $plugin_url . 'images/' );
+}
+if ( ! class_exists( 'WFSPB_F_Shipping' ) ) {
+	/**
+	 * Class WFSPB_F_Shipping
+	 */
+	class WFSPB_F_Shipping {
+		public function __construct() {
+			add_action( 'plugins_loaded', array( $this, 'check_environment' ) );
+			//Compatible with High-Performance order storage (COT)
+			add_action( 'before_woocommerce_init', array( $this, 'before_woocommerce_init' ) );
+		}
+		public function before_woocommerce_init() {
+			if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+				\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+				\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'cart_checkout_blocks', __FILE__, true );
+			}
+		}
+		public function check_environment() {
+			if ( class_exists( 'WFSPB_Shipping' ) ) {
+				return;
+			}
+			if ( ! class_exists( 'VillaTheme_Require_Environment' ) ) {
+				include_once WFSPB_F_SHIPPING_INCLUDES . 'support.php';
+			}
+			$environment = new \VillaTheme_Require_Environment( [
+				'plugin_name'     => 'Free Shipping Bar for WooCommerce',
+				'php_version'     => '7.0',
+				'wp_version'      => '5.0',
+				'require_plugins' => [
+					[
+						'slug' => 'woocommerce',
+						'name' => 'WooCommerce',
+						'file' => 'woocommerce/woocommerce.php',
+						'version' => '7.0',
+					],
+				],
+			] );
+
+			if ( $environment->has_error() ) {
+				return;
+			}
+			$this->includes();
+			add_action( 'init', array( $this, 'init' ) );
+			add_filter( 'plugin_action_links_' . WFSPB_F_SHIPPING_BASENAME, array( $this, 'settings_link' ) );
+		}
+		protected function includes() {
+			$files = array(
+				WFSPB_F_SHIPPING_INCLUDES=>[
+					'file_name' => [
+						'support.php',
+						'data.php',
+					]
+				],
+				WFSPB_F_SHIPPING_ADMIN=>[
+					'class_prefix' => 'WFSPB_F_ADMIN_',
+					'file_name' => [
+						'settings.php'
+					]
+				],
+				WFSPB_F_SHIPPING_FRONTEND=>[
+					'class_prefix' => 'WFSPB_F_FRONTEND_',
+					'file_name' => [
+						'frontend.php',
+					]
+				]
+			);
+			foreach ( $files as $path => $items ) {
+				if (empty($items['file_name']) || !is_array($items['file_name'])){
+					continue;
+				}
+				$class_prefix = $items['class_prefix']??'';
+				foreach ($items['file_name'] as $file_name){
+					$file = $path.'/'.$file_name;
+					if ( !file_exists( $file ) ) {
+						continue;
+					}
+					require_once $file;
+					$ext_file  = pathinfo( $file);
+					$class_name = $ext_file['filename'] ??'';
+					if ($class_prefix){
+						$class_name = preg_replace( '/\W/i', '_', $class_prefix . ucfirst( $class_name ) );
+					}
+					if ( $class_name && class_exists( $class_name ) ) {
+						new $class_name;
+					}
+				}
+			}
+		}
+		// link setting page on install plugin
+		public function settings_link( $links ) {
+			$settings_link = '<a href="admin.php?page=woocommerce_free_ship" title="' . esc_html__( 'Settings', 'woo-free-shipping-bar' ) . '">' . esc_html__( 'Settings', 'woo-free-shipping-bar' ) . '</a>';
+			array_unshift( $links, $settings_link );
+
+			return $links;
+		}
+		/**
+		 * load Language translate
+		 */
+		public function load_plugin_textdomain() {
+			$locale = apply_filters( 'plugin_locale', get_locale(), 'woo-free-shipping-bar' );
+			load_textdomain( 'woo-free-shipping-bar', WFSPB_F_SHIPPING_LANGUAGES_DIR . "woo-free-shipping-bar-$locale.mo" );
+			load_plugin_textdomain( 'woo-free-shipping-bar', false, WFSPB_F_SHIPPING_LANGUAGES_DIR );
+		}
+		public function init() {
+			$this->load_plugin_textdomain();
+			if ( class_exists( 'VillaTheme_Support' ) ) {
+				new VillaTheme_Support( array(
+					'support'    => 'https://wordpress.org/support/plugin/woo-free-shipping-bar',
+					'docs'       => 'http://docs.villatheme.com/?item=woocommerce-free-shipping-bar',
+					'review'     => 'https://wordpress.org/support/plugin/woo-free-shipping-bar/reviews/?rate=5#rate-response',
+					'pro_url'    => 'https://1.envato.market/N3mPV',
+					'css'        => WFSPB_F_SHIPPING_CSS,
+					'image'      => WFSPB_F_SHIPPING_IMAGES,
+					'slug'       => 'woo-free-shipping-bar',
+					'menu_slug'  => 'woocommerce_free_ship',
+					'survey_url' => 'https://script.google.com/macros/s/AKfycbyEruJLWkwB0gXJINPkF8gRKVJ4OulK-F8KfgmWxKPdIXWffVQtC4Rz37mUqKWZo1g-DQ/exec',
+					'version'    => WFSPB_F_VERSION,
+				) );
+			}
+		}
+	}
+	new WFSPB_F_Shipping();
+}
 
 if ( ! class_exists( 'WFSPB_F_Shipping' ) ) {
     include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
@@ -69,11 +195,12 @@ if ( ! class_exists( 'WFSPB_F_Shipping' ) ) {
 			    'plugin_name'     => 'Free Shipping Bar for WooCommerce',
 			    'php_version'     => '7.0',
 			    'wp_version'      => '5.0',
-			    'wc_version'      => '7.0',
 			    'require_plugins' => [
 				    [
 					    'slug' => 'woocommerce',
 					    'name' => 'WooCommerce',
+					    'file' => 'woocommerce/woocommerce.php',
+					    'version' => '7.0',
 				    ],
 			    ],
 		    ] );
@@ -359,7 +486,7 @@ if ( ! class_exists( 'WFSPB_F_Shipping' ) ) {
                                     <th scope="row"><?php esc_html_e( 'Detect IP', 'woo-free-shipping-bar' ) ?></th>
                                     <td>
                                         <a class="vi-ui button" target="_blank"
-                                           href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Get this feature', 'woo-free-shipping-bar' ) ?></a>
+                                           href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
                                         <p class="description"><?php esc_html_e( 'If you enable to Detect IP then the user is accessing to your site will be automatically apply to Free Shipping zone with their IP. Note: their ip are contained in Free Shipping zone (Don\'t apply with STATE)', 'woo-free-shipping-bar' ) ?></p>
                                     </td>
                                 </tr>
@@ -858,8 +985,10 @@ if ( ! class_exists( 'WFSPB_F_Shipping' ) ) {
                 
                 if ( ! $min_amount && $default_zone ) {
                     $detect_result    = $this->settings->get_min_amount( $default_zone );
-                    $min_amount       = $detect_result['min_amount'];
-                    $ignore_discounts = $detect_result['ignore_discounts'];
+	                if ( is_array( $detect_result ) ) {
+		                $min_amount       = $detect_result['min_amount'];
+		                $ignore_discounts = $detect_result['ignore_discounts'];
+	                }
                 }
             } elseif ( $default_zone ) {
                 $detect_result    = $this->settings->get_min_amount( $default_zone );
@@ -984,7 +1113,7 @@ if ( ! class_exists( 'WFSPB_F_Shipping' ) ) {
             $zones[ $zone->get_id() ]                            = $zone->get_data();
             $zones[ $zone->get_id() ]['formatted_zone_location'] = $zone->get_formatted_location();
             $zones[ $zone->get_id() ]['shipping_methods']        = $zone->get_shipping_methods();
-            
+
             // Add user configured zones
             $zones = array_merge( $zones, WC_Shipping_Zones::get_zones() );
             foreach ( $zones as $each_zone ) {
@@ -1005,4 +1134,3 @@ if ( ! class_exists( 'WFSPB_F_Shipping' ) ) {
         
     }
 }
-new WFSPB_F_Shipping();
