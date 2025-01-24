@@ -74,13 +74,22 @@ if ( ! class_exists( 'WFSPB_F_Data' ) ) {
 		}
 		public function get_shipping_bar_message( $shipping_bar_info,$messages = []){
 			$settings = self::get_instance();
-			$min_amount = max(0,floatval($shipping_bar_info['min_amount'] ?? 0));
 			$message_class = 'wfspb-message-in-shop';
-			if (empty($shipping_bar_info) || !$min_amount){
+			if (empty($shipping_bar_info)){
 				if (is_checkout() ||  is_cart() || !empty($messages['get_message_error'])){
 					$message_class = 'wfspb-message-in-cart-checkout';
 				}
 				return apply_filters('wfspb_get_shipping_bar_message','<div id="wfspb-main-content" class="'.$message_class.'"></div>','', $shipping_bar_info,'', $messages);
+			}
+			$min_amount = max(0,floatval($shipping_bar_info['min_amount'] ?? 0));
+			if (!$min_amount){
+				$message_class = 'wfspb-message-success';
+				$result = $settings->get_params('message_success');
+				$checkout_link_text = apply_filters( 'wfspb_filter_checkout_link_text', esc_html__('Checkout' , 'woo-free-shipping-bar' ));
+				$checkout = '<a class="vi-wcaio-sidebar-cart-bt-nav-checkout" href="' . wc_get_checkout_url() . '" title="' . esc_html__( 'Checkout', 'woo-free-shipping-bar' ) . '">' . esc_html( $checkout_link_text ) . '</a>';
+				$result = str_replace( ['{checkout_page}'], [$checkout], $result );
+				$result = do_shortcode($result);
+				return apply_filters('wfspb_get_shipping_bar_message','<div id="wfspb-main-content" class="'.$message_class.'">'.$result.'</div>','', $shipping_bar_info,'', $messages);
 			}
 			$current_total = max(0,floatval($shipping_bar_info['current_total'] ?? 0));
 			$min_amount_html = '<b id="wfspb_min_order_amount">' . wc_price( $min_amount ) . '</b>';

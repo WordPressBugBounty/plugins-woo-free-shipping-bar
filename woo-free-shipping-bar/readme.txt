@@ -5,7 +5,7 @@ Tags: woocommerce free shipping bar, promotion bar, widget, shipping bar
 Requires at least: 5.0
 Tested up to: 6.7
 WC requires at least: 7.0
-WC tested up to: 9.4
+WC tested up to: 9.5
 Stable tag: trunk
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -246,7 +246,7 @@ free shipping for order above 100 USD with customers from US. But if a customers
 
 - [Project Page](https://villatheme.com)
 - [Documentation](http://docs.villatheme.com/woo-free-shipping-bar/)
-- [Report Bugs/Issues](https://villatheme.com/supports)
+- [Report Bugs/Issues](https://villatheme.com/knowledge-base/security-is-our-priority/)
 
 == Installation ==
 
@@ -267,6 +267,9 @@ free shipping for order above 100 USD with customers from US. But if a customers
 8. Bar display when get free ship
 
 == Changelog ==
+/*1.2.6 - 2025.01.25*/
+- Updated: VillaTheme support
+
 /*1.2.5 - 2024.12.13*/
 - Updated: Compatibility with WC9.4 and WP6.7
 – Updated: New image the gift box

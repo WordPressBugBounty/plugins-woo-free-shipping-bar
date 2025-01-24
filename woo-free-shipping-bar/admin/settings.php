@@ -144,11 +144,11 @@ class WFSPB_F_ADMIN_Settings {
 	}
 	public function setting_page(){
 		$tabs       = array(
+			'message'     => esc_html__( 'Message', 'woo-free-shipping-bar' ),
+			'design'     => esc_html__( 'Design', 'woo-free-shipping-bar' ),
 			'general'   => esc_html__( 'General', 'woo-free-shipping-bar' ),
 			'assign'     => esc_html__( 'Assign', 'woo-free-shipping-bar' ),
 			'effect'     => esc_html__( 'Effect', 'woo-free-shipping-bar' ),
-			'design'     => esc_html__( 'Design', 'woo-free-shipping-bar' ),
-			'message'     => esc_html__( 'Message', 'woo-free-shipping-bar' ),
 		);
 		$tab_active = array_key_first( $tabs );
 		?>
@@ -235,17 +235,6 @@ class WFSPB_F_ADMIN_Settings {
 		?>
 		<table class="optiontable form-table">
 			<tr>
-				<th scope="row"><?php esc_html_e( 'Enable', 'woo-free-shipping-bar' ) ?></th>
-				<td>
-					<div class="vi-ui toggle checkbox checked">
-						<input type="checkbox"
-						       name="<?php echo esc_attr( self::set_field( 'enable' ) ); ?>" <?php checked( $this->settings->get_params( 'enable' ), 1 ); ?>
-						       value="1">
-						<label></label>
-					</div>
-				</td>
-			</tr>
-			<tr>
 				<th scope="row"><?php esc_html_e( 'Mobile', 'woo-free-shipping-bar' ) ?></th>
 				<td>
                     <a class="vi-ui button" target="_blank"
@@ -260,27 +249,6 @@ class WFSPB_F_ADMIN_Settings {
                        href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
                     <p class="description"><?php esc_html_e( 'If you enable to Detect IP then the user is accessing to your site will be automatically apply to Free Shipping zone with their IP. Note: their ip are contained in Free Shipping zone', 'woo-free-shipping-bar' ) ?></p>
                 </td>
-			</tr>
-			<tr>
-				<th scope="row"><?php esc_html_e( 'Free Shipping Zone(*)', 'woo-free-shipping-bar' ) ?></th>
-				<td>
-					<select class="vi-ui fluid dropdown required"
-					        name="<?php echo esc_attr( self::set_field( 'default-zone' ) ); ?>">
-						<?php
-						$default_zone = $this->settings->get_params( 'default-zone' );
-						$exist_zones = $this->settings->get_free_shipping_zone();
-						if (is_array($exist_zones) && !empty($exist_zones)){
-							foreach ($exist_zones as $k => $v){
-								$selected = $default_zone == $k ? 'selected' :'';
-								?>
-								<option value="<?php echo esc_attr($k) ?>" <?php echo esc_attr($selected)?>><?php echo wp_kses_post($v['name'] ?? $k)?></option>
-								<?php
-							}
-						}
-						?>
-					</select>
-					<p class="description"><?php esc_html_e( 'Please select zone default what you set Free Shipping method.', 'woo-free-shipping-bar' ) ?></p>
-				</td>
 			</tr>
 			<tr>
 				<th scope="row"><?php esc_html_e( 'Minimum value to display', 'woo-free-shipping-bar' ) ?></th>
@@ -635,6 +603,39 @@ class WFSPB_F_ADMIN_Settings {
 	protected function message_options(){
 		?>
 		<table class="form-table">
+            <tr>
+                <th scope="row"><?php esc_html_e( 'Enable', 'woo-free-shipping-bar' ) ?></th>
+                <td>
+                    <div class="vi-ui toggle checkbox checked">
+                        <input type="checkbox"
+                               name="<?php echo esc_attr( self::set_field( 'enable' ) ); ?>" <?php checked( $this->settings->get_params( 'enable' ), 1 ); ?>
+                               value="1">
+                        <label></label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><?php esc_html_e( 'Free Shipping Zone(*)', 'woo-free-shipping-bar' ) ?></th>
+                <td>
+                    <select class="vi-ui fluid dropdown required"
+                            name="<?php echo esc_attr( self::set_field( 'default-zone' ) ); ?>">
+                        <option value="none" disabled><?php esc_html_e('None - Premium version only', 'woo-free-shipping-bar'); ?></option>
+						<?php
+						$default_zone = $this->settings->get_params( 'default-zone' );
+						$exist_zones = $this->settings->get_free_shipping_zone();
+						if (is_array($exist_zones) && !empty($exist_zones)){
+							foreach ($exist_zones as $k => $v){
+								$selected = $default_zone == $k ? 'selected' :'';
+								?>
+                                <option value="<?php echo esc_attr($k) ?>" <?php echo esc_attr($selected)?>><?php echo wp_kses_post($v['name'] ?? $k)?></option>
+								<?php
+							}
+						}
+						?>
+                    </select>
+                    <p class="description"><?php esc_html_e( 'Please select zone default what you set Free Shipping method.', 'woo-free-shipping-bar' ) ?></p>
+                </td>
+            </tr>
 			<tr>
 				<th><?php esc_html_e( 'Announce System', 'woo-free-shipping-bar' ) ?></th>
 				<td>

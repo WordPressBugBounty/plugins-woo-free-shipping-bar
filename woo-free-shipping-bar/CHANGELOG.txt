@@ -1,3 +1,6 @@
+/*1.2.6 - 2025.01.25*/
+- Updated: VillaTheme support
+
 /*1.2.5 - 2024.12.13*/
 - Updated: Compatibility with WC9.4 and WP6.7
 – Updated: New image the gift box
