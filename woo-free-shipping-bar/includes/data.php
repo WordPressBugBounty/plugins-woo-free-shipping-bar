@@ -120,7 +120,10 @@ if ( ! class_exists( 'WFSPB_F_Data' ) ) {
 						[$current_total_html,$cart_amount_html,$min_amount_html,$missing_amount_html], $result );
 				}
 			}else{
-				$message_class = 'wfspb-message-success';
+				if (is_checkout() ||  is_cart() || !empty($messages['get_message_error'])){
+					$message_class = 'wfspb-message-in-cart-checkout';
+				}
+				$message_class .= ' wfspb-message-success';
 				$result = $settings->get_params('message_success');
 				$checkout_link_text = apply_filters( 'wfspb_filter_checkout_link_text', esc_html__('Checkout' , 'woo-free-shipping-bar' ));
 				$checkout = '<a class="vi-wcaio-sidebar-cart-bt-nav-checkout" href="' . wc_get_checkout_url() . '" title="' . esc_html__( 'Checkout', 'woo-free-shipping-bar' ) . '">' . esc_html( $checkout_link_text ) . '</a>';

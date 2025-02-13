@@ -49,7 +49,7 @@ class WFSPB_F_FRONTEND_Frontend {
 		}
 		$shipping_bar_info = $this->settings->get_shipping_bar_info();
 		$message           = $this->settings->get_shipping_bar_message( $shipping_bar_info );
-		if ( strpos( $message, 'wfspb-message-always-show' ) || strpos( $message, 'wfspb-message-success' ) ) {
+		if ( strpos( $message, 'wfspb-message-always-show' )  ) {
 			$fragment['#wfspb-main-content'] = $message;
 		} elseif ( strpos( $message, 'wfspb-message-in-shop' ) ) {
 			$fragment['#wfspb-main-content.wfspb-message-in-shop']          = $message;
