@@ -50,7 +50,7 @@
         setTimeout(function () {
             $(document).trigger('wfspb-bar-init');
         }, 100);
-        $(document.body).on('wc_fragments_refreshed wc_fragments_ajax_error updated_checkout', function () {
+        $(document.body).on('wc_fragments_refreshed wc_fragments_loaded wc_fragments_ajax_error updated_checkout', function () {
             $(document).trigger('wfspb-design');
         });
         $(document).on('wfspb-bar-init', function () {

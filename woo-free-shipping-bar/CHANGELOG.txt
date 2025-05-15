@@ -1,3 +1,6 @@
+/*1.2.8 - 2025.05.15*/
+- Updated: VillaTheme support
+
 /*1.2.7 - 2025.02.13*/
 - Fixed: Error reported by customer
 

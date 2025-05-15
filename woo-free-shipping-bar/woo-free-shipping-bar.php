@@ -3,7 +3,7 @@
  * Plugin Name: Free Shipping Bar for WooCommerce
  * Plugin URI: https://villatheme.com/
  * Description: Motivate customers to reach the free shipping threshold with a visual free shipping bar, dynamic messages and progress tracker.
- * Version: 1.2.7
+ * Version: 1.2.8
  * Author: VillaTheme
  * Author URI: https://villatheme.com
  * License: GPLv2
@@ -13,9 +13,9 @@
  * Copyright 2017-2025 VillaTheme.com. All rights reserved.
  * Requires Plugins: woocommerce
  * Requires at least: 5.0
- * Tested up to: 6.7
+ * Tested up to: 6.8
  * WC requires at least: 7.0
- * WC tested up to: 9.6
+ * WC tested up to: 9.8
  * Requires PHP: 7.0
  */
 
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if (!defined('WFSPB_F_VERSION')){
-	define( 'WFSPB_F_VERSION', '1.2.7' );
+	define( 'WFSPB_F_VERSION', '1.2.8' );
 	define( 'WFSPB_F_SHIPPING_BASENAME', plugin_basename( __FILE__ ) );
 	define( 'WFSPB_F_SHIPPING_DIR', plugin_dir_path( __FILE__ ) );
 	define( 'WFSPB_F_SHIPPING_INCLUDES', WFSPB_F_SHIPPING_DIR . "includes" . DIRECTORY_SEPARATOR );
@@ -67,7 +67,7 @@ if ( ! class_exists( 'WFSPB_F_Shipping' ) ) {
 					[
 						'slug' => 'woocommerce',
 						'name' => 'WooCommerce',
-						'file' => 'woocommerce/woocommerce.php',
+						'defined_version' => 'WC_VERSION',
 						'version' => '7.0',
 					],
 				],
@@ -143,7 +143,7 @@ if ( ! class_exists( 'WFSPB_F_Shipping' ) ) {
 			if ( class_exists( 'VillaTheme_Support' ) ) {
 				new VillaTheme_Support( array(
 					'support'    => 'https://wordpress.org/support/plugin/woo-free-shipping-bar',
-					'docs'       => 'http://docs.villatheme.com/?item=woocommerce-free-shipping-bar',
+					'docs'       => 'https://docs.villatheme.com/?item=woocommerce-free-shipping-bar',
 					'review'     => 'https://wordpress.org/support/plugin/woo-free-shipping-bar/reviews/?rate=5#rate-response',
 					'pro_url'    => 'https://1.envato.market/N3mPV',
 					'css'        => WFSPB_F_SHIPPING_CSS,
