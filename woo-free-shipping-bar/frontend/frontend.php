@@ -180,7 +180,10 @@ class WFSPB_F_FRONTEND_Frontend {
 		);
 		wp_localize_script( 'woocommerce-free-shipping-bar', '_wfsb_params', $params );
 		self::enqueue_scripts();
-		add_action( 'wp_footer', array( $this, 'frontend_html' ) );
+		$position = apply_filters( 'wfspb_f_position', 'wp_footer');
+        if ($position){
+	        add_action( $position, array( $this, 'frontend_html' ) );
+        }
 	}
 
 	public function frontend_html() {

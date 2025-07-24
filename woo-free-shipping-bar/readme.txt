@@ -5,7 +5,7 @@ Tags: woocommerce free shipping bar, promotion bar, widget, shipping bar
 Requires at least: 5.0
 Tested up to: 6.8
 WC requires at least: 7.0
-WC tested up to: 9.8
+WC tested up to: 10.0
 Stable tag: trunk
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -284,6 +284,9 @@ free shipping for order above 100 USD with customers from US. But if a customers
 6. Mini bar on single product page
 
 == Changelog ==
+/*1.2.9 - 2025.07.24*/
+- Updated: VillaTheme support
+
 /*1.2.8 - 2025.05.15*/
 - Updated: VillaTheme support
 
