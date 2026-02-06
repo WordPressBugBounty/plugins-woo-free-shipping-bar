@@ -1,3 +1,9 @@
+/*1.2.11 - 2026.01.23*/
+- Updated: VillaTheme support
+
+/*1.2.10 - 2025.11.08*/
+- Updated: Change message of full bar in cart/checkout block
+
 /*1.2.9 - 2025.07.24*/
 - Updated: VillaTheme support
 

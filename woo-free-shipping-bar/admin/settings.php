@@ -187,13 +187,13 @@ class WFSPB_F_ADMIN_Settings {
 			}
 			?>
 			<div class="vi-ui message positive tiny">
+                <a target="_blank" href="https://1.envato.market/N3mPV">
 				<p>
-                    <?php esc_html_e('You can use the shortcode to display shipping bar everywhere you want', 'woo-free-shipping-bar'); ?>
-                    -
-                    <a target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       <?php esc_html_e('Upgrade to use the shortcode so you can place the shipping bar wherever you like:', 'woo-free-shipping-bar'); ?>
+
                 </p>
-				<p><strong>[woo_free_shipping_bar]</strong></p>
+                <p><strong>[woo_free_shipping_bar]</strong></p>
+                </a>
 			</div>
 			<form method="post" class="vi-ui small form">
 				<?php

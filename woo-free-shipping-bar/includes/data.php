@@ -84,11 +84,15 @@ if ( ! class_exists( 'WFSPB_F_Data' ) ) {
 			$min_amount = max(0,floatval($shipping_bar_info['min_amount'] ?? 0));
 			if (!$min_amount){
 				$message_class = 'wfspb-message-success';
-				$result = $settings->get_params('message_success');
-				$checkout_link_text = apply_filters( 'wfspb_filter_checkout_link_text', esc_html__('Checkout' , 'woo-free-shipping-bar' ));
-				$checkout = '<a class="vi-wcaio-sidebar-cart-bt-nav-checkout" href="' . wc_get_checkout_url() . '" title="' . esc_html__( 'Checkout', 'woo-free-shipping-bar' ) . '">' . esc_html( $checkout_link_text ) . '</a>';
-				$result = str_replace( ['{checkout_page}'], [$checkout], $result );
-				$result = do_shortcode($result);
+				if (isset(WC()->cart) && !WC()->cart->is_empty()) {
+					$result             = $settings->get_params( 'message_success' );
+					$checkout_link_text = apply_filters( 'wfspb_filter_checkout_link_text', esc_html__( 'Checkout', 'woo-free-shipping-bar' ) );
+					$checkout           = '<a class="vi-wcaio-sidebar-cart-bt-nav-checkout" href="' . wc_get_checkout_url() . '" title="' . esc_html__( 'Checkout', 'woo-free-shipping-bar' ) . '">' . esc_html( $checkout_link_text ) . '</a>';
+					$result             = str_replace( [ '{checkout_page}' ], [ $checkout ], $result );
+					$result             = do_shortcode( $result );
+				}else{
+					$result = '';
+				}
 				return apply_filters('wfspb_get_shipping_bar_message','<div id="wfspb-main-content" class="'.$message_class.'">'.$result.'</div>','', $shipping_bar_info,'', $messages);
 			}
 			$current_total = max(0,floatval($shipping_bar_info['current_total'] ?? 0));
@@ -223,7 +227,7 @@ if ( ! class_exists( 'WFSPB_F_Data' ) ) {
 			if (empty($shipping_destination['country']) && ( !is_numeric($default_shipping_zone) || !isset($free_shipping_exist[$default_shipping_zone]) )){
 				return apply_filters('wfspb_get_shipping_bar_info',[]);
 			}
-			$country  = $shipping_destination['country'];
+			$country  = $shipping_destination['country']??'';
 			if (!$country){
 				$free_shipping_exist = [$default_shipping_zone => $free_shipping_exist[$default_shipping_zone]];
 			}

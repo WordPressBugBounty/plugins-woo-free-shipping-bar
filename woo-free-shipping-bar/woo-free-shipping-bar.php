@@ -3,19 +3,19 @@
  * Plugin Name: Free Shipping Bar for WooCommerce
  * Plugin URI: https://villatheme.com/
  * Description: Motivate customers to reach the free shipping threshold with a visual free shipping bar, dynamic messages and progress tracker.
- * Version: 1.2.9
+ * Version: 1.2.11
  * Author: VillaTheme
  * Author URI: https://villatheme.com
  * License: GPLv2
  * License URI: http://www.gnu.org/licenses/gpl-2.0
  * Text Domain: woo-free-shipping-bar
  * Domain Path: /languages
- * Copyright 2017-2025 VillaTheme.com. All rights reserved.
+ * Copyright 2017-2026 VillaTheme.com. All rights reserved.
  * Requires Plugins: woocommerce
  * Requires at least: 5.0
- * Tested up to: 6.8
+ * Tested up to: 6.9
  * WC requires at least: 7.0
- * WC tested up to: 10.0
+ * WC tested up to: 10.4
  * Requires PHP: 7.0
  */
 
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if (!defined('WFSPB_F_VERSION')){
-	define( 'WFSPB_F_VERSION', '1.2.9' );
+	define( 'WFSPB_F_VERSION', '1.2.11' );
 	define( 'WFSPB_F_SHIPPING_BASENAME', plugin_basename( __FILE__ ) );
 	define( 'WFSPB_F_SHIPPING_DIR', plugin_dir_path( __FILE__ ) );
 	define( 'WFSPB_F_SHIPPING_INCLUDES', WFSPB_F_SHIPPING_DIR . "includes" . DIRECTORY_SEPARATOR );

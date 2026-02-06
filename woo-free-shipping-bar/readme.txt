@@ -3,9 +3,9 @@ Contributors: villatheme, mrt3vn
 Donate link: http://www.villatheme.com/donate
 Tags: woocommerce free shipping bar, promotion bar, widget, shipping bar
 Requires at least: 5.0
-Tested up to: 6.8
+Tested up to: 6.9
 WC requires at least: 7.0
-WC tested up to: 10.0
+WC tested up to: 10.4
 Stable tag: trunk
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -38,7 +38,6 @@ Effect: Settings to let the shipping bar appear or hide after a certain time, or
 [youtube https://youtu.be/bjvflHXXBCU]
 
 **You can learn how to use the plugin by this video guide:**
-
 [youtube https://youtu.be/25nsSu5j9Q8]
 
 ### Important Notice:
@@ -178,7 +177,7 @@ free shipping for order above 100 USD with customers from US. But if a customers
 
 [Coupon Box for WooCommerce](https://wordpress.org/plugins/woo-coupon-box/)
 
-[CURCY - Multi Currency for WooCommerce - The best free currency exchange plugin - Run smoothly on WooCommerce 9.x](https://wordpress.org/plugins/woo-multi-currency/)
+[CURCY - Multi Currency for WooCommerce - Smoothly on WooCommerce 9.x](https://wordpress.org/plugins/woo-multi-currency/)
 
 [Customer Coupons for WooCommerce](https://wordpress.org/plugins/woo-customer-coupons/)
 
@@ -210,6 +209,8 @@ free shipping for order above 100 USD with customers from US. But if a customers
 
 [Lucky Wheel for WooCommerce - Spin a Sale](https://wordpress.org/plugins/woo-lucky-wheel/)
 
+[Lucky Wheel Giveaway](https://wordpress.org/plugins/wp-lucky-wheel/)
+
 [Notification for WooCommerce | Boost Your Sales - Recent Sales Popup - Live Feed Sales - Upsells](https://wordpress.org/plugins/woo-notification/)
 
 [Orders Tracking for WooCommerce](https://wordpress.org/plugins/woo-orders-tracking/)
@@ -218,9 +219,9 @@ free shipping for order above 100 USD with customers from US. But if a customers
 
 [Pofily - WooCommerce Product Filters](https://wordpress.org/plugins/pofily-woo-product-filters/)
 
-[Product Builder for WooCommerce - Custom PC Builder](https://wordpress.org/plugins/woo-product-builder/)
+[PRENA - Product Pre-Orders for WooCommerce](https://wordpress.org/plugins/product-pre-orders-for-woo/)
 
-[Product Pre-Orders for WooCommerce](https://wordpress.org/plugins/product-pre-orders-for-woo/)
+[Product Builder for WooCommerce - Custom PC Builder](https://wordpress.org/plugins/woo-product-builder/)
 
 [Product Size Chart For WooCommerce](https://wordpress.org/plugins/product-size-chart-for-woo/)
 
@@ -242,13 +243,17 @@ free shipping for order above 100 USD with customers from US. But if a customers
 
 [TMDS - Dropshipping for TEMU and Woo](https://wordpress.org/plugins/tmds-dropshipping-for-temu-and-woo/)
 
-[VARGAL - Additional Variation Gallery for Woo](https://wordpress.org/plugins/vargal-additional-variation-gallery-for-woo/)
+[VARGAL - Additional Variation Gallery for WooCommerce](https://wordpress.org/plugins/vargal-additional-variation-gallery-for-woo/)
+
+[VillaTheme Core](https://wordpress.org/plugins/villatheme-core/)
+
+[VIMA - Multi Customer Addresses for Woo](https://wordpress.org/plugins/vima-multi-customer-addresses-for-woo/)
+
+[VISeek - Easy Custom Search](https://wordpress.org/plugins/viseek-easy-custom-search/)
 
 [W2S - Migrate WooCommerce to Shopify](https://wordpress.org/plugins/w2s-migrate-woo-to-shopify/)
 
 [WebPOS – Point of Sale for WooCommerce](https://wordpress.org/plugins/webpos-point-of-sale-for-woocommerce/)
-
-[WordPress Lucky Wheel - Spin a Sale](https://wordpress.org/plugins/wp-lucky-wheel/)
 
 [WPBulky - WordPress Bulk Edit Post Types](https://wordpress.org/plugins/wpbulky-wp-bulk-edit-post-types/)
 
@@ -284,6 +289,12 @@ free shipping for order above 100 USD with customers from US. But if a customers
 6. Mini bar on single product page
 
 == Changelog ==
+/*1.2.11 - 2026.01.23*/
+- Updated: VillaTheme support
+
+/*1.2.10 - 2025.11.08*/
+- Updated: Change message of full bar in cart/checkout block
+
 /*1.2.9 - 2025.07.24*/
 - Updated: VillaTheme support
 

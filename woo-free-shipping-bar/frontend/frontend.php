@@ -36,6 +36,7 @@ class WFSPB_F_FRONTEND_Frontend {
 							'#wfspb-main-content.wfspb-message-in-shop'=>['type' => 'string'],
 							'#wfspb-main-content.wfspb-message-in-cart-checkout'=>['type' => 'string'],
 							'#wfspb-progress'=>['type' => 'string'],
+							'#wfspb-main-content'=>['type' => 'string'],
 						]
 					);
 				},
@@ -173,6 +174,7 @@ class WFSPB_F_FRONTEND_Frontend {
 			'ajax_url'          => admin_url( 'admin-ajax.php' ),
 			'nonce'             => wp_create_nonce( 'vifsb-nonce' ),
 			'html_refresh'      => [
+				'#wfspb-main-content',
 				'#wfspb-main-content.wfspb-message-in-shop',
 				'#wfspb-main-content.wfspb-message-in-cart-checkout',
 				'#wfspb-progress',

@@ -5,19 +5,52 @@
     }
     _wfsb_params.time_to_disappear = 1;
     _wfsb_params.displayTime = 20;
+    let wp_select, wp_subscribe, wc_block_cart_store_key,block_subscribe;
     $(document).ready(function () {
-        if (typeof wc !== "undefined" && typeof wc.blocksCheckout !== "undefined"){
-            let { registerCheckoutFilters   } = wc.blocksCheckout;
-            registerCheckoutFilters( 'wfspb_add_checkout_filter', {
-                proceedToCheckoutButtonLink: function (defaultValue, extensions, args){
-                    let messages = extensions?.wfspb_message || args?.cart?.extensions?.wfspb_message;
-                    if (!messages){
+        if (typeof wc !== "undefined" ){
+            if (typeof wc.blocksCheckout !== "undefined") {
+                let {registerCheckoutFilters} = wc.blocksCheckout;
+                registerCheckoutFilters('wfspb_add_checkout_filter', {
+                    proceedToCheckoutButtonLink: function (defaultValue, extensions, args) {
+                        let messages = extensions?.wfspb_message || args?.cart?.extensions?.wfspb_message;
+                        if (!messages) {
+                            return defaultValue;
+                        }
+                        $(document).triggerHandler('wfspb-refresh-message', [messages]);
                         return defaultValue;
                     }
-                    $(document).triggerHandler('wfspb-refresh-message', [messages]);
-                    return defaultValue;
+                });
+            }else if (typeof wp !== "undefined" && wp?.data?.select && wp?.data?.subscribe  && typeof wc !== "undefined" && wc?.wcBlocksData?.CART_STORE_KEY){
+                if (!block_subscribe){
+                    wp_select = wp.data.select;
+                    wp_subscribe = wp.data.subscribe;
+                    wc_block_cart_store_key = wc.wcBlocksData.CART_STORE_KEY ;
+                    block_subscribe = wp_subscribe(  function () {
+                        let cart = wp_select(wc_block_cart_store_key).getCartData();
+                        let messages = cart?.extensions?.wfspb_message;
+                        if (!messages){
+                            return;
+                        }
+                        $(document).triggerHandler('wfspb-refresh-message', [messages]);
+                    }, wc_block_cart_store_key )
                 }
-            } );
+            }
+        }if ($(`[data-block-name="woocommerce/product-button"]`).length && $(`[data-wp-on--click="actions.addCartItem"]`).length){
+            let originalFetch = window.fetch;
+            window.fetch = async function(...args) {
+                let response = await originalFetch.apply(this, args);
+                if (args[0] && typeof args[0] === 'string' && args[0].includes('/wc/store/v1/cart')) {
+                    let  clone = response.clone();
+                    clone.json().then(data => {
+                        let messages = data?.extensions?.wfspb_message;
+                        if (!messages){
+                            return;
+                        }
+                        $(document).triggerHandler('wfspb-refresh-message', [messages]);
+                    });
+                }
+                return response;
+            };
         }
         let shipping_bar_show_delay,shipping_bar_timeout;
         $(document).on('click', '.wfspb-gift-box', function () {
@@ -73,7 +106,11 @@
                     $(v).replaceWith(fragments[v]);
                 }
             });
-            $(document).trigger('wfspb-design');
+            if (!$('#wfspb-top-bar').hasClass('wfspb-hidden')){
+                $(document).trigger('wfspb-design');
+            }else {
+                $(document).trigger('wfspb-show-bar');
+            }
             return refresh;
         });
         $(document).on('wfspb-design', function () {

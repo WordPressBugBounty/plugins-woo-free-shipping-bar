@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Free Shipping Bar for WooCommerce\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-24 01:50+0000\n"
+"POT-Creation-Date: 2025-11-08 04:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -21,7 +21,7 @@ msgid "(Display gift box when customer add product to cart)"
 msgstr ""
 
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:1052
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:105
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:118
 msgid "(incl. tax)"
 msgstr ""
 
@@ -98,8 +98,10 @@ msgid "Checked to hide bar on this page"
 msgstr ""
 
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:973
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:116
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:117
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:89
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:90
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:132
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:133
 msgid "Checkout"
 msgstr ""
 
@@ -448,7 +450,7 @@ msgstr ""
 
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:757
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:547
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:95
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:108
 msgid "Shopping"
 msgstr ""
 
@@ -566,7 +568,6 @@ msgid "Total quantity in cart."
 msgstr ""
 
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:489
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:194
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:241
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:249
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:257
@@ -588,6 +589,12 @@ msgstr ""
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:777
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:790
 msgid "Upgrade This Feature"
+msgstr ""
+
+#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:192
+msgid ""
+"Upgrade to use the shortcode so you can place the shipping bar wherever you "
+"like:"
 msgstr ""
 
 #. Author of the plugin
@@ -619,10 +626,6 @@ msgstr ""
 
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:310
 msgid "WP's conditional tags,"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:191
-msgid "You can use the shortcode to display shipping bar everywhere you want"
 msgstr ""
 
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:756
