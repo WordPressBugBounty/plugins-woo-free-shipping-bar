@@ -5,7 +5,7 @@ Tags: woocommerce free shipping bar, promotion bar, widget, shipping bar
 Requires at least: 5.0
 Tested up to: 6.9
 WC requires at least: 7.0
-WC tested up to: 10.4
+WC tested up to: 10.5
 Stable tag: trunk
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -38,6 +38,7 @@ Effect: Settings to let the shipping bar appear or hide after a certain time, or
 [youtube https://youtu.be/bjvflHXXBCU]
 
 **You can learn how to use the plugin by this video guide:**
+
 [youtube https://youtu.be/25nsSu5j9Q8]
 
 ### Important Notice:
@@ -289,6 +290,9 @@ free shipping for order above 100 USD with customers from US. But if a customers
 6. Mini bar on single product page
 
 == Changelog ==
+/*1.2.12 - 2026.02.27*/
+- Updated: Compatibility with WC10.5
+
 /*1.2.11 - 2026.01.23*/
 - Updated: VillaTheme support
 
