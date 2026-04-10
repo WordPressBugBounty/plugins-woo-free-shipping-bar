@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Free Shipping Bar for WooCommerce\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-08 04:58+0000\n"
+"POT-Creation-Date: 2026-04-07 08:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,11 +16,6 @@ msgstr ""
 "X-Loco-Version: 2.6.2; wp-6.1.1\n"
 "X-Domain: woo-free-shipping-bar"
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:919
-msgid "(Display gift box when customer add product to cart)"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:1052
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:118
 msgid "(incl. tax)"
 msgstr ""
@@ -51,22 +46,18 @@ msgid ""
 "Shipping method) for your locationn before setting up the free shipping bar."
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:777
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:640
 msgid "Announce System"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:457
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:150
 msgid "Assign"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:928
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:293
 msgid "Assign pages"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:538
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:355
 msgid "Background Color"
 msgstr ""
@@ -75,16 +66,10 @@ msgstr ""
 msgid "bar on this page"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:646
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:463
 msgid "Border"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:712
-msgid "Bottom"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:587
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:398
 msgid "Center"
 msgstr ""
@@ -93,11 +78,6 @@ msgstr ""
 msgid "Checked to"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:932
-msgid "Checked to hide bar on this page"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:973
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:89
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:90
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:132
@@ -105,7 +85,6 @@ msgstr ""
 msgid "Checkout"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:887
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:584
 msgid "Close message"
 msgstr ""
@@ -118,57 +97,38 @@ msgstr ""
 msgid "Compatible with cache plugin"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:936
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:305
 msgid "Conditional tags"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:612
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:434
 msgid "Current Progress Background Color"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:735
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:535
 msgid "Custom CSS"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:727
-msgid "Custom Icon"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:448
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:148
 msgid "Design"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:486
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:246
 msgid "Detect IP"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:454
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:151
 msgid "Effect"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:463
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:469
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:598
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:918
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:607
 msgid "Enable"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:498
-msgid "Enable on mobile and tablet."
 msgstr ""
 
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:242
 msgid "Enable on mobile."
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:592
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:406
 msgid "Enable Progress"
 msgstr ""
@@ -181,58 +141,31 @@ msgstr ""
 msgid "Exclude shipping class"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:562
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:383
 msgid "Font-Family"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:570
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:392
 msgid "Font-Size"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:628
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:447
 msgid "Font-Size Progress Bar"
 msgstr ""
 
 #. Name of the plugin
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:425
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:963
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:156
 msgid "Free Shipping Bar for WooCommerce"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:474
-msgid "Free Shipping Zone"
 msgstr ""
 
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:618
 msgid "Free Shipping Zone(*)"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:445
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:149
 msgid "General"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:497
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:511
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:519
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:526
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:533
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:723
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:730
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:883
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:890
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:897
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:904
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:931
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:939
-msgid "Get this feature"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:720
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:527
 msgid "Gift Icon"
 msgstr ""
@@ -260,24 +193,14 @@ msgid ""
 "contained in Free Shipping zone"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:490
-msgid ""
-"If you enable to Detect IP then the user is accessing to your site will be "
-"automatically apply to Free Shipping zone with their IP. Note: their ip are "
-"contained in Free Shipping zone (Don't apply with STATE)"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:731
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:531
 msgid "Image dimension should be 147 x 71(px)."
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:880
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:577
 msgid "Initial delay"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:586
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:397
 msgid "Left"
 msgstr ""
@@ -286,11 +209,6 @@ msgstr ""
 msgid "Let's control on which specific pages the shipping bar disappear using"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:940
-msgid "Lets you control on which pages disappear using WP's conditional tags."
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:554
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:369
 msgid "Link Color"
 msgstr ""
@@ -299,28 +217,23 @@ msgstr ""
 msgid "Link to cart page"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:845
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:728
 msgid "Link to checkout page"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:870
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:738
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:769
 msgid "Link to shop page"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:645
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:462
 msgid "Loading"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:451
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:147
 msgid "Message"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:852
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:743
 msgid "Message Error"
 msgstr ""
@@ -333,18 +246,14 @@ msgstr ""
 msgid "Message Full Free Shipping"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:797
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:667
 msgid "Message Purchased"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:831
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:706
 msgid "Message Success"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:791
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:820
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:662
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:689
 msgid "Minimum order amount Free Shipping"
@@ -354,7 +263,6 @@ msgstr ""
 msgid "Minimum value to display"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:494
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:238
 msgid "Mobile"
 msgstr ""
@@ -369,11 +277,6 @@ msgstr ""
 msgid "None - Premium version only"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:430
-msgid "Not exists a zone free shipping on Woocommmerce"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:644
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:461
 msgid "Plain"
 msgstr ""
@@ -382,40 +285,18 @@ msgstr ""
 msgid "Please go to"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:432
-msgid ""
-"Please go to WooCommerce -> Settings -> Shipping and then Add New a Shipping "
-"Zones with Free Shipping method (or Enable Free Shipping method) for your "
-"location."
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:481
-msgid "Please select zone default what you set Free Shiping method."
-msgstr ""
-
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:636
 msgid "Please select zone default what you set Free Shipping method."
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:691
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:492
 msgid "Position"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:516
-msgid "Position on Cart page"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:523
-msgid "Position on Checkout page"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:604
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:427
 msgid "Progress Background Color"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:639
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:458
 msgid "Progress Bar Effect"
 msgstr ""
@@ -424,12 +305,10 @@ msgstr ""
 msgid "Progress Color"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:620
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:441
 msgid "Progress Text Color"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:949
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:227
 msgid "Save"
 msgstr ""
@@ -438,23 +317,15 @@ msgstr ""
 msgid "Select shipping class to exclude when calculate subtotal"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:901
-msgid "Set time to disappear"
-msgstr ""
-
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:128
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:282
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:282
 msgid "Settings"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:757
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:547
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/includes/data.php:108
 msgid "Shopping"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:909
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:564
 msgid "Show gift box"
 msgstr ""
@@ -467,15 +338,10 @@ msgstr ""
 msgid "Show on single product page"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:512
-msgid "Show progress bar at bottom Cart page, Checkout page"
-msgstr ""
-
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:327
 msgid "Show progress bar at bottom Cart page, Checkout page."
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:534
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:335
 msgid "Show progress bar below add to cart button."
 msgstr ""
@@ -484,45 +350,22 @@ msgstr ""
 msgid "Show progress bar in Menu cart."
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:530
-msgid "Show single product page"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:508
-msgid "Small Progres Bar"
-msgstr ""
-
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:323
 msgid "Small progress bar"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:652
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:468
 msgid "Style"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:663
-msgid "Style 1"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:673
-msgid "Style 2"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:683
-msgid "Style 3"
 msgstr ""
 
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:375
 msgid "Text"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:582
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:400
 msgid "Text Align"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:546
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:362
 msgid "Text Color"
 msgstr ""
@@ -531,14 +374,11 @@ msgstr ""
 msgid "The minimum value in the cart to display the shipping bar"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:824
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:866
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:701
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:765
 msgid "The outstanding amount of the free shipping program"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:812
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:693
 msgid "The total amount of your purchases"
 msgstr ""
@@ -553,21 +393,14 @@ msgid ""
 "ignore other condition"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:894
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:592
 msgid "Time to disappear"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:702
-msgid "Top"
-msgstr ""
-
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:816
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:697
 msgid "Total quantity in cart."
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:489
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:241
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:249
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:257
@@ -601,7 +434,6 @@ msgstr ""
 msgid "VillaTheme"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:963
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:137
 msgid "WC F-Shipping Bar"
 msgstr ""
@@ -628,7 +460,6 @@ msgstr ""
 msgid "WP's conditional tags,"
 msgstr ""
 
-#: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/woo-free-shipping-bar.php:756
 #: D:/git/free-version/woo-free-shipping-bar/woo-free-shipping-bar/admin/settings.php:546
 msgid "You have purchased $100 of $120. Continue"
 msgstr ""

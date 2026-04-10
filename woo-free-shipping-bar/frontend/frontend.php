@@ -15,14 +15,17 @@ class WFSPB_F_FRONTEND_Frontend {
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_script' ) );
 		add_filter( 'woocommerce_add_to_cart_fragments', array( $this, 'update_bar_message' ) );
 		add_filter( 'woocommerce_update_order_review_fragments', array( $this, 'update_bar_message' ) );
-		//wc block
+		// Blocks / Store API
 		add_filter( 'woocommerce_after_calculate_totals', array( $this, 'block_update_cart' ) );
 	}
 	public function block_update_cart() {
+        if ( isset(self::$cache['woocommerce_store_api_register_endpoint_data']) ) {
+            return;
+        }
         if (!function_exists('woocommerce_store_api_register_endpoint_data') || !class_exists('\Automattic\WooCommerce\StoreApi\Schemas\V1\CartSchema')){
             return;
         }
-		woocommerce_store_api_register_endpoint_data(
+        self::$cache['woocommerce_store_api_register_endpoint_data'] = woocommerce_store_api_register_endpoint_data(
 			array(
 				'endpoint'        => \Automattic\WooCommerce\StoreApi\Schemas\V1\CartSchema::IDENTIFIER,
 				'namespace'       => 'wfspb_message',
@@ -50,11 +53,11 @@ class WFSPB_F_FRONTEND_Frontend {
 		}
 		$shipping_bar_info = $this->settings->get_shipping_bar_info();
 		$message           = $this->settings->get_shipping_bar_message( $shipping_bar_info );
-		if ( strpos( $message, 'wfspb-message-always-show' )  ) {
+		if ( false !== strpos( $message, 'wfspb-message-always-show' ) ) {
 			$fragment['#wfspb-main-content'] = $message;
-		} elseif ( strpos( $message, 'wfspb-message-in-shop' ) ) {
+		} elseif ( false !== strpos( $message, 'wfspb-message-in-shop' ) ) {
 			$fragment['#wfspb-main-content.wfspb-message-in-shop']          = $message;
-			$fragment['#wfspb-main-content.wfspb-message-in-cart-checkout'] = $this->settings->get_shipping_bar_message( $shipping_bar_info, [ 'get_message_error' => 1 ] );;
+			$fragment['#wfspb-main-content.wfspb-message-in-cart-checkout'] = $this->settings->get_shipping_bar_message( $shipping_bar_info, [ 'get_message_error' => 1 ] );
 		}else{
 			$fragment['#wfspb-main-content.wfspb-message-in-cart-checkout'] = $message;
 		}

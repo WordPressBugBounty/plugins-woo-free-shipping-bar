@@ -798,7 +798,10 @@ class WFSPB_F_ADMIN_Settings {
 		return '';
 	}
 	public function save_settings() {
-		if ( ! isset( $_POST['_woofreeshipbar_nonce'] ) || ! wp_verify_nonce( wc_clean($_POST['_woofreeshipbar_nonce']), 'woofreeshipbar_action_nonce' ) ) {
+		if ( ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+		if ( ! isset( $_POST['_woofreeshipbar_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['_woofreeshipbar_nonce'] ) ), 'woofreeshipbar_action_nonce' ) ) {
 			return;
 		}
 		if ( ! isset( $_REQUEST['page'] ) || wc_clean($_REQUEST['page']) != 'woocommerce_free_ship' ) {
