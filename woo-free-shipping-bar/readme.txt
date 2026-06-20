@@ -3,9 +3,9 @@ Contributors: villatheme, mrt3vn
 Donate link: http://www.villatheme.com/donate
 Tags: woocommerce free shipping bar, promotion bar, widget, shipping bar
 Requires at least: 5.0
-Tested up to: 6.9
+Tested up to: 7.0
 WC requires at least: 7.0
-WC tested up to: 10.6
+WC tested up to: 10.8.1
 Stable tag: trunk
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -290,6 +290,10 @@ free shipping for order above 100 USD with customers from US. But if a customers
 6. Mini bar on single product page
 
 == Changelog ==
+/*1.3.1 - 2026.06.20*/
+- Updated: VillaTheme support
+– Updated: Compatible with WP 7.0 and WC 10.8.1
+
 /*1.3.0 - 2026.04.10*/
 - Updated: Optimize code
 
