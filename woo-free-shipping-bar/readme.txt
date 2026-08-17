@@ -4,8 +4,9 @@ Donate link: http://www.villatheme.com/donate
 Tags: woocommerce free shipping bar, promotion bar, widget, shipping bar
 Requires at least: 5.0
 Tested up to: 7.0
+Requires PHP: 7.0
 WC requires at least: 7.0
-WC tested up to: 10.8.1
+WC tested up to: 11.0
 Stable tag: trunk
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -32,7 +33,7 @@ The increase in sales and traffic to the website is very important for a website
 
 Effect: Settings to let the shipping bar appear or hide after a certain time, or close the shipping bar button.
 
->[Try the Demo](https://new2new.com/?item=woocommerce-free-shipping-bar "Demo Free Shipping Bar for WooCommerce") | [Documents](http://docs.villatheme.com/?item=woocommerce-free-shipping-bar "Documents") | [Pro Version](https://1.envato.market/N3mPV "Pro Version") | [Facebook group](https://www.facebook.com/groups/villatheme "VillaTheme")
+>[Try the Demo](https://new2new.com/?item=woocommerce-free-shipping-bar "Demo Free Shipping Bar for WooCommerce") | [Documents](http://docs.villatheme.com/?item=woocommerce-free-shipping-bar "Documents") | [Pro Version](https://villatheme.com/extensions/woocommerce-free-shipping-bar/ "Pro Version") | [Facebook group](https://www.facebook.com/groups/villatheme "VillaTheme")
 
 **Preview WooCommerce Free Shipping**
 [youtube https://youtu.be/bjvflHXXBCU]
@@ -140,7 +141,7 @@ free shipping for order above 100 USD with customers from US. But if a customers
 
 - **Assign pages**: Choose to hide the bar on common page like Homepage, Blog page, Cart page, Checkout page...
 
-- GET PRO VERSION  [https://codecanyon.net/item/woo-free-shipping-bar/19536343](https://1.envato.market/N3mPV)
+- GET PRO VERSION  [https://codecanyon.net/item/woo-free-shipping-bar/19536343](https://villatheme.com/extensions/woocommerce-free-shipping-bar/)
 
 ### MAY BE YOU NEED
 
@@ -276,8 +277,8 @@ free shipping for order above 100 USD with customers from US. But if a customers
 == Installation ==
 
 1. Unzip the download package
-1. Upload `woo-free-shipping-bar` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
+2. Upload `woo-free-shipping-bar` to the `/wp-content/plugins/` directory
+3. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==
 
@@ -290,172 +291,177 @@ free shipping for order above 100 USD with customers from US. But if a customers
 6. Mini bar on single product page
 
 == Changelog ==
-/*1.3.1 - 2026.06.20*/
+
+2026.08.17 - version 1.3.2
+- Updated: Compatibility check with WC 11.0
+- Updated: Optimize code
+
+2026.06.20 - version 1.3.1
 - Updated: VillaTheme support
 – Updated: Compatible with WP 7.0 and WC 10.8.1
 
-/*1.3.0 - 2026.04.10*/
+2026.04.10 - version 1.3.0
 - Updated: Optimize code
 
-/*1.2.12 - 2026.02.27*/
+2026.02.27 - version 1.2.12
 - Updated: Compatibility with WC10.5
 
-/*1.2.11 - 2026.01.23*/
+2026.01.23 - version 1.2.11
 - Updated: VillaTheme support
 
-/*1.2.10 - 2025.11.08*/
+2025.11.08 - version 1.2.10
 - Updated: Change message of full bar in cart/checkout block
 
-/*1.2.9 - 2025.07.24*/
+2025.07.24 - version 1.2.9
 - Updated: VillaTheme support
 
-/*1.2.8 - 2025.05.15*/
+2025.05.15 - version 1.2.8
 - Updated: VillaTheme support
 
-/*1.2.7 - 2025.02.13*/
+2025.02.13 - version 1.2.7
 - Fixed: Error reported by customer
 
-/*1.2.6 - 2025.01.25*/
+2025.01.25 - version 1.2.6
 - Updated: VillaTheme support
 
-/*1.2.5 - 2024.12.13*/
+2024.12.13 - version 1.2.5
 - Updated: Compatibility with WC9.4 and WP6.7
 – Updated: New image the gift box
 – Updated: New design for settings page
 - Deleted: Compatible with WPML
 
-/*1.2.4 - 2024.07.19*/
+2024.07.19 - version 1.2.4
 - Updated: Refactor code
 - Fixed: Showing wrong min amount
 
-/*1.2.3 - 2024.06.08*/
+2024.06.08 - version 1.2.3
 - Updated: Support file
 - Updated: Update security
 
-/**1.2.2 - 2024.05.06**/
+2024.05.06 - version 1.2.2
 – Fixed: Missing min Css support file
 
-/**1.2.1 - 2024.04.11**/
+2024.04.11 - version 1.2.1
 - Updated: Updated support file
 
-/**1.2.0 - 2023.09.05**/
+2023.09.05 - version 1.2.0
 - Updated: Compatible with High-Performance order storage (COT)
 
-/**1.1.9 - 2023.02.21**/
+2023.02.21 - version 1.1.9
 - Updated: Add nonce for ajax action
 
-/**1.1.8 - 2022.05.21**/
+2022.05.21 - version 1.1.8
 - Updated: Compatible with WC 6.9 and WP 6.1
 - Updated: Updated support
 - Fixed: Fixed security
 
-/**1.1.7 - 2022.03.29 **/
+2022.03.29 - version 1.1.7
 - Updated: Updated support
 
-/**1.1.6 - 2022.03.21 **/
+2022.03.21 - version 1.1.6
 - Updated: Compatible with WC6.3.0 and WP5.9.0
 - Updated: Updated support
 
-/**1.1.5.1 - 2021.12.26 **/
+2021.12.26 - version 1.1.5.1
 - Updated: Compatible with WooCommerce 6.0.0
 
-/**1.1.5 - 2021.10.22 **/
+2021.10.22 - version 1.1.5
 - Fixed: Fixed error with SG Optimizer - Error: couldn't connect wordpress REST API
 
-/**1.1.4.10 - 2021.09.18 **/
+2021.09.18 - version 1.1.4.10
 - Fixed: Font size in the bar text message not run the style in setting
 
-/**1.1.4.9 - 2021.08.28 **/
+2021.08.28 - version 1.1.4.9
 - Fixed: Fixed compatible with SG Optimizer - Error: couldn't connect wordpress REST API
 
-/**1.1.4.8 - 2021.07.21 **/
+2021.07.21 - version 1.1.4.8
 - Fixed: Save settings
 
-/**1.1.4.6 - 2021.06.18 **/
+2021.06.18 - version 1.1.4.6
 - Updated: Update support file
 
-/**1.1.4.5 - 2021.06.01 **/
+2021.06.01 - version 1.1.4.5
 - Update: Dashboard notices
 
-/*1.1.4.2 - 2020.10.28**/
+2020.10.28 - version 1.1.4.2
 - Fixed: Calculate after add coupon
 
-/*1.1.4.1 - 2020.04.23**/
+2020.04.23 - version 1.1.4.1
 - Updated: Support file
 
-/*1.1.3.9 - 2020.03.09**/
+2020.03.09 - version 1.1.3.9
 - Fixed: Display notice
 
-/*1.1.3.8 - 2019.11.16**/
+2019.11.16 - version 1.1.3.8
 - Updated: Sanitize input data
 
-/*1.1.3.7 - 2019.10.14**/
+2019.10.14 - version 1.1.3.7
 - Fixed: Display notice
 
-/*1.1.3.6 - 2019.10.07**/
+2019.10.07 - version 1.1.3.6
 - Updated: Update readme
 
-/*1.1.3.5 - 2019.05.10**/
+2019.05.10 - version 1.1.3.5
 - Updated: Compatible with WPML
 
-/*1.1.3.4 - 2019.05.10**
+2019.05.10 - version 1.1.3.4
 - Updated: Change plugin name
 - Updated: Change premium version url
 
-/*1.1.3.3 - 2019.04.03**
+2019.04.03 - version 1.1.3.3
 - Updated: Make admin notices dismissible
 
-/*1.1.3.2 - 2019.03.02*/
+2019.03.02 - version 1.1.3.2
 - Fixed: Wrong calculation when using tax or coupon
 - Updated: Working with zone type continent, postcode, everywhere
 
-/*1.1.3.1 - 2018.12.11*/
+2018.12.11 - version 1.1.3.1
 - Fixed: Tab JS in backend
 - Fixed: Get option
 - Updated: Class support
 
-/*1.1.3 - 2018.11.21*/
+2018.11.21 - version 1.1.3
 - Updated: Make the same premium version
 
-/*1.1.2.3 - 2018.11.10*/
+2018.11.10 - version 1.1.2.3
 - Fixed: Support class
 
-/*1.1.2.2 - 2018.10.17*/
+2018.10.17 - version 1.1.2.2
 - Removed: Upgrade Notice
 
-/*1.1.2.1 - 2018.10.15*/
+2018.10.15 - version 1.1.2.1
 - Removed: Upgrade Notice
 
-/*1.1.2 - 2018.07.31*/
+2018.07.31 - version 1.1.2
 - Fixed: Get cart price
 - Fixed: Hidden class CSS
 
-/*1.1.1 - 2018.06.05*/
+2018.06.05 - version 1.1.1
 - Fixed: Conflict Constant with Premium version
 - Fixed: Class Support
 - Fixed: Get Zones
 
-/*1.1.0.1.1 - 2018.05.11*/
+2018.05.11 - version 1.1.0.1.1
 - Updated: Class support
 
-/*1.1.0.1 - 2018.04.16*/
+2018.04.16 - version 1.1.0.1
 - Updated: Plugin description
 
-/*1.1.0 - 2018.04.13*/
+2018.04.13 - version 1.1.0
 - Added: New features
 - Changed: Backend
 
-/*1.0.4 - 2017.06.01*/
+2017.06.01 - version 1.0.4
 - Fixed: Check pro version
 
-/*1.0.3 - 2017.04.28*/
+2017.04.28 - version 1.0.3
 - Updated: More option for message purchased.
 
-/*1.0.2 - 2017.04.17*/
+2017.04.17 - version 1.0.2
 - Updated: Close icon
 - Updated: Total cart amount in message purchased
 
-/*1.0.1 - 2017.04.13*/
+2017.04.13 - version 1.0.1
 - Updated: Link
 - Fixed: Close icon
 

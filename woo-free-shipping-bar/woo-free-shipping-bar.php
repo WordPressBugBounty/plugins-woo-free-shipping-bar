@@ -3,7 +3,7 @@
  * Plugin Name: Free Shipping Bar for WooCommerce
  * Plugin URI: https://villatheme.com/
  * Description: Motivate customers to reach the free shipping threshold with a visual free shipping bar, dynamic messages and progress tracker.
- * Version: 1.3.1
+ * Version: 1.3.2
  * Author: VillaTheme
  * Author URI: https://villatheme.com
  * License: GPLv2
@@ -15,7 +15,7 @@
  * Requires at least: 5.0
  * Tested up to: 7.0
  * WC requires at least: 7.0
- * WC tested up to: 10.8.1
+ * WC tested up to: 11.0
  * Requires PHP: 7.0
  */
 
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if (!defined('WFSPB_F_VERSION')){
-	define( 'WFSPB_F_VERSION', '1.3.1' );
+	define( 'WFSPB_F_VERSION', '1.3.2' );
 	define( 'WFSPB_F_SHIPPING_BASENAME', plugin_basename( __FILE__ ) );
 	define( 'WFSPB_F_SHIPPING_DIR', plugin_dir_path( __FILE__ ) );
 	define( 'WFSPB_F_SHIPPING_INCLUDES', WFSPB_F_SHIPPING_DIR . "includes" . DIRECTORY_SEPARATOR );
@@ -145,7 +145,7 @@ if ( ! class_exists( 'WFSPB_F_Shipping' ) ) {
 					'support'    => 'https://wordpress.org/support/plugin/woo-free-shipping-bar',
 					'docs'       => 'https://docs.villatheme.com/?item=woocommerce-free-shipping-bar',
 					'review'     => 'https://wordpress.org/support/plugin/woo-free-shipping-bar/reviews/?rate=5#rate-response',
-					'pro_url'    => 'https://1.envato.market/N3mPV',
+					'pro_url'    => 'https://villatheme.com/extensions/woocommerce-free-shipping-bar/',
 					'css'        => WFSPB_F_SHIPPING_CSS,
 					'image'      => WFSPB_F_SHIPPING_IMAGES,
 					'slug'       => 'woo-free-shipping-bar',

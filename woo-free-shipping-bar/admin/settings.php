@@ -187,7 +187,7 @@ class WFSPB_F_ADMIN_Settings {
 			}
 			?>
 			<div class="vi-ui message positive tiny">
-                <a target="_blank" href="https://1.envato.market/N3mPV">
+                <a target="_blank" href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/">
 				<p>
                        <?php esc_html_e('Upgrade to use the shortcode so you can place the shipping bar wherever you like:', 'woo-free-shipping-bar'); ?>
 
@@ -238,7 +238,7 @@ class WFSPB_F_ADMIN_Settings {
 				<th scope="row"><?php esc_html_e( 'Mobile', 'woo-free-shipping-bar' ) ?></th>
 				<td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
 					<p class="description"><?php esc_html_e( 'Enable on mobile.', 'woo-free-shipping-bar' ) ?></p>
 				</td>
 			</tr>
@@ -246,7 +246,7 @@ class WFSPB_F_ADMIN_Settings {
 				<th scope="row"><?php esc_html_e( 'Detect IP', 'woo-free-shipping-bar' ) ?></th>
 				<td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
                     <p class="description"><?php esc_html_e( 'If you enable to Detect IP then the user is accessing to your site will be automatically apply to Free Shipping zone with their IP. Note: their ip are contained in Free Shipping zone', 'woo-free-shipping-bar' ) ?></p>
                 </td>
 			</tr>
@@ -254,7 +254,7 @@ class WFSPB_F_ADMIN_Settings {
 				<th scope="row"><?php esc_html_e( 'Minimum value to display', 'woo-free-shipping-bar' ) ?></th>
 				<td >
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
 					<p class="description"><?php esc_html_e( 'The minimum value in the cart to display the shipping bar', 'woo-free-shipping-bar' ) ?></p>
 				</td>
 			</tr>
@@ -262,7 +262,7 @@ class WFSPB_F_ADMIN_Settings {
 				<th scope="row"><?php esc_html_e( 'Exclude shipping class', 'woo-free-shipping-bar' ) ?></th>
 				<td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
 					<p class="description"><?php esc_html_e( 'Select shipping class to exclude when calculate subtotal', 'woo-free-shipping-bar' ) ?></p>
 				</td>
 			</tr>
@@ -270,7 +270,7 @@ class WFSPB_F_ADMIN_Settings {
 				<th scope="row"><?php esc_html_e( 'Always show free shipping bar', 'woo-free-shipping-bar' ) ?></th>
 				<td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
                     <p class="description"><?php esc_html_e( 'This option will make free shipping bar show Message Full Free Shipping and ignore other condition', 'woo-free-shipping-bar' ) ?></p>
 				</td>
 			</tr>
@@ -278,7 +278,7 @@ class WFSPB_F_ADMIN_Settings {
 				<th scope="row"><?php esc_html_e( 'Compatible with cache plugin', 'woo-free-shipping-bar' ) ?></th>
 				<td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
                     <p class="description"><?php esc_html_e( 'Enable this option if your message is cached by cache plugin', 'woo-free-shipping-bar' ) ?></p>
 				</td>
 			</tr>
@@ -293,7 +293,7 @@ class WFSPB_F_ADMIN_Settings {
 				<th scope="row"><?php esc_html_e( 'Assign pages', 'woo-free-shipping-bar' ) ?></th>
 				<td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
 					<p class="description">
 						<?php esc_html_e( 'Checked to', 'woo-free-shipping-bar' );
 						echo '<span class="wfspb-note"> ' . esc_html__( 'hide', 'woo-free-shipping-bar' ) . ' </span>';
@@ -305,7 +305,7 @@ class WFSPB_F_ADMIN_Settings {
 				<th scope="row"><?php esc_html_e( 'Conditional tags', 'woo-free-shipping-bar' ) ?></th>
 				<td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
 					<p class="description"><?php esc_html_e( 'Let\'s control on which specific pages the shipping bar disappear using', 'woo-free-shipping-bar' ) ?>
 						<a href="https://codex.wordpress.org/Conditional_Tags" target="_blank"><?php esc_html_e( 'WP\'s conditional tags,', 'woo-free-shipping-bar' ) ?></a>
 						<a href="https://developer.woocommerce.com/docs/conditional-tags-in-woocommerce/" target="_blank"><?php esc_html_e( 'Woo\'s conditional tags.', 'woo-free-shipping-bar' ) ?></a>
@@ -323,7 +323,7 @@ class WFSPB_F_ADMIN_Settings {
                 <th scope="row"><?php esc_html_e( 'Small progress bar', 'woo-free-shipping-bar' ) ?></th>
                 <td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
                     <p class="description"><?php esc_html_e( 'Show progress bar at bottom Cart page, Checkout page.', 'woo-free-shipping-bar' ) ?></p>
                 </td>
             </tr>
@@ -331,7 +331,7 @@ class WFSPB_F_ADMIN_Settings {
                 <th scope="row"><?php esc_html_e( 'Show on single product page', 'woo-free-shipping-bar' ) ?></th>
                 <td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
                     <p class="description"><?php esc_html_e( 'Show progress bar below add to cart button.', 'woo-free-shipping-bar' ) ?></p>
                 </td>
             </tr>
@@ -339,7 +339,7 @@ class WFSPB_F_ADMIN_Settings {
                 <th scope="row"><?php esc_html_e( 'Show in Menu cart', 'woo-free-shipping-bar' ) ?></th>
                 <td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
                     <p class="description"><?php esc_html_e( 'Show progress bar in Menu cart.', 'woo-free-shipping-bar' ) ?></p>
                 </td>
             </tr>
@@ -517,7 +517,7 @@ class WFSPB_F_ADMIN_Settings {
                 <th scope="row"><?php esc_html_e( 'Header selector', 'woo-free-shipping-bar' ) ?></th>
                 <td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
                     <p class="description">
 						<?php esc_html_e( 'Add CSS selector to make free shipping bar working with the header bar', 'woo-free-shipping-bar' ) ?>
                     </p>
@@ -527,7 +527,7 @@ class WFSPB_F_ADMIN_Settings {
                 <th scope="row"><?php esc_html_e( 'Gift Icon', 'woo-free-shipping-bar' ) ?></th>
                 <td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
                     <p class="description"><?php esc_html_e( 'Image dimension should be 147 x 71(px).', 'woo-free-shipping-bar' ) ?></p>
                 </td>
             </tr>
@@ -577,14 +577,14 @@ class WFSPB_F_ADMIN_Settings {
                 <th scope="row"><?php esc_html_e( 'Initial delay', 'woo-free-shipping-bar' ) ?></th>
                 <td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
                 </td>
             </tr>
             <tr>
                 <th scope="row"><?php esc_html_e( 'Close message', 'woo-free-shipping-bar' ) ?></th>
                 <td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
                     <p class="description"><?php esc_html_e( 'Allow  to show the close icon on the free shipping bar', 'woo-free-shipping-bar' ) ?></p>
                 </td>
             </tr>
@@ -592,7 +592,7 @@ class WFSPB_F_ADMIN_Settings {
                 <th scope="row"><?php esc_html_e( 'Time to disappear', 'woo-free-shipping-bar' ) ?></th>
                 <td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
                     <p class="description"><?php esc_html_e( 'Allow to set time to disappear the free shipping bar', 'woo-free-shipping-bar' ) ?></p>
                 </td>
             </tr>
@@ -729,12 +729,12 @@ class WFSPB_F_ADMIN_Settings {
 					</p>
 					<p class="description">
                         <a class="vi-ui button" target="_blank"
-                           href="https://1.envato.market/N3mPV">{cart_page} - <?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                           href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/">{cart_page} - <?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
 						- <?php esc_html_e( 'Link to cart page', 'woo-free-shipping-bar' ) ?>
 					</p>
 					<p class="description">
                         <a class="vi-ui button" target="_blank"
-                           href="https://1.envato.market/N3mPV">{shopping} - <?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                           href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/">{shopping} - <?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
 						- <?php esc_html_e( 'Link to shop page', 'woo-free-shipping-bar' ) ?>
 					</p>
 				</td>
@@ -774,7 +774,7 @@ class WFSPB_F_ADMIN_Settings {
 				<th><?php esc_html_e( 'Message Full Free Shipping', 'woo-free-shipping-bar' ) ?></th>
 				<td>
                     <a class="vi-ui button" target="_blank"
-                       href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                       href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
 					<p class="description">
 						<?php esc_html_e( 'This message is used when min amount is zero', 'woo-free-shipping-bar' ) ?>
 					</p>
@@ -787,7 +787,7 @@ class WFSPB_F_ADMIN_Settings {
                     <th><?php esc_html_e( 'Message for multi-languages', 'woo-free-shipping-bar' ) ?></th>
                     <td>
                         <a class="vi-ui button" target="_blank"
-                           href="https://1.envato.market/N3mPV"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
+                           href="https://villatheme.com/extensions/woocommerce-free-shipping-bar/"><?php esc_html_e( 'Upgrade This Feature', 'woo-free-shipping-bar' ) ?></a>
                     </td>
                 </tr>
                 <?php
