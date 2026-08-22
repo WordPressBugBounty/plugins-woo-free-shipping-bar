@@ -1,10 +1,10 @@
-=== Free Shipping Bar for WooCommerce ===
+=== Freetop – Free Shipping Bar for WooCommerce ===
 Contributors: villatheme, mrt3vn
 Donate link: http://www.villatheme.com/donate
 Tags: woocommerce free shipping bar, promotion bar, widget, shipping bar
 Requires at least: 5.0
-Tested up to: 7.0
-Requires PHP: 7.0
+Tested up to: 7.1
+Requires PHP: 7.4
 WC requires at least: 7.0
 WC tested up to: 11.0
 Stable tag: trunk
@@ -291,6 +291,9 @@ free shipping for order above 100 USD with customers from US. But if a customers
 6. Mini bar on single product page
 
 == Changelog ==
+2026.08.22 - version 1.3.3
+- Updated: Compatibility check with WP 7.1
+- Updated: VillaThem support
 
 2026.08.17 - version 1.3.2
 - Updated: Compatibility check with WC 11.0
