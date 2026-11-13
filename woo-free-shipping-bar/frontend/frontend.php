@@ -52,12 +52,12 @@ class WFSPB_F_FRONTEND_Frontend {
 			return $fragment;
 		}
 		$shipping_bar_info = $this->settings->get_shipping_bar_info();
-		$message           = $this->settings->get_shipping_bar_message( $shipping_bar_info );
+		$message           = WFSPB_F_Data::kses_bar_html( $this->settings->get_shipping_bar_message( $shipping_bar_info ) );
 		if ( false !== strpos( $message, 'wfspb-message-always-show' ) ) {
 			$fragment['#wfspb-main-content'] = $message;
 		} elseif ( false !== strpos( $message, 'wfspb-message-in-shop' ) ) {
 			$fragment['#wfspb-main-content.wfspb-message-in-shop']          = $message;
-			$fragment['#wfspb-main-content.wfspb-message-in-cart-checkout'] = $this->settings->get_shipping_bar_message( $shipping_bar_info, [ 'get_message_error' => 1 ] );
+			$fragment['#wfspb-main-content.wfspb-message-in-cart-checkout'] = WFSPB_F_Data::kses_bar_html( $this->settings->get_shipping_bar_message( $shipping_bar_info, [ 'get_message_error' => 1 ] ) );
 		}else{
 			$fragment['#wfspb-main-content.wfspb-message-in-cart-checkout'] = $message;
 		}
@@ -100,20 +100,20 @@ class WFSPB_F_FRONTEND_Frontend {
 			[],
 			'register'
 		);
-		$bg_color        = $this->settings->get_params( 'bg-color' );
-		$text_color      = $this->settings->get_params( 'text-color' );
-		$link_color      = $this->settings->get_params( 'link-color' );
-		$text_align      = $this->settings->get_params( 'text-align' );
-		$font            = $this->settings->get_params( 'font' );
-		$font_size       = $this->settings->get_params( 'font-size' );
+		$bg_color   = WFSPB_F_Data::sanitize_css_color( $this->settings->get_params( 'bg-color' ) );
+		$text_color = WFSPB_F_Data::sanitize_css_color( $this->settings->get_params( 'text-color' ) );
+		$link_color = WFSPB_F_Data::sanitize_css_color( $this->settings->get_params( 'link-color' ) );
+		$text_align = WFSPB_F_Data::sanitize_text_align( $this->settings->get_params( 'text-align' ) );
+		$font       = WFSPB_F_Data::sanitize_font_family( $this->settings->get_params( 'font' ) );
+		$font_size  = absint( $this->settings->get_params( 'font-size' ) );
 		if ( $font == 'Default' ) {
 			$font = '';
 		}
 		if ( ! empty( $font ) ) {
 			$font = str_replace( '+', ' ', $font );
-			wp_register_style( 'woocommerce-free-shipping-bar-google-font', '//fonts.googleapis.com/css?family=' . $font . ':400,500,600,700', array(), WFSPB_F_VERSION );
+			wp_register_style( 'woocommerce-free-shipping-bar-google-font', 'https://fonts.googleapis.com/css?family=' . rawurlencode( $font ) . ':400,500,600,700', array(), WFSPB_F_VERSION );
 		}
-		$custom_css = stripslashes_from_strings_only( $this->settings->get_params( 'custom_css' ) );
+		$custom_css = WFSPB_F_Data::sanitize_custom_css( $this->settings->get_params( 'custom_css' ) );
 		$custom_css .= "
 				#wfspb-top-bar .wfspb-lining-layer{
 					background-color: {$bg_color} !important;
@@ -143,16 +143,17 @@ class WFSPB_F_FRONTEND_Frontend {
 				}
 				";
 		if ( $font ) {
+			$font_css = WFSPB_F_Data::css_font_family_value( $font );
 			$custom_css .= "
 				#wfspb-top-bar{
-					font-family: {$font} !important;
+					font-family: {$font_css} !important;
 				}";
 		}
 		if ( $this->settings->get_params( 'enable-progress' ) ) {
-			$bg_progress         = $this->settings->get_params( 'bg-color-progress' );
-			$bg_current_progress = $this->settings->get_params( 'bg-current-progress' );
-			$progress_text_color = $this->settings->get_params( 'progress-text-color' );
-			$fontsize_progress   = $this->settings->get_params( 'font-size-progress' );
+			$bg_progress         = WFSPB_F_Data::sanitize_css_color( $this->settings->get_params( 'bg-color-progress' ) );
+			$bg_current_progress = WFSPB_F_Data::sanitize_css_color( $this->settings->get_params( 'bg-current-progress' ) );
+			$progress_text_color = WFSPB_F_Data::sanitize_css_color( $this->settings->get_params( 'progress-text-color' ) );
+			$fontsize_progress   = absint( $this->settings->get_params( 'font-size-progress' ) );
 			$custom_css          .= "
 					#wfspb-progress .wfspb-progress-background,.woocommerce-free-shipping-bar-order .woocommerce-free-shipping-bar-order-bar{
 						background-color: {$bg_progress} !important;
@@ -173,10 +174,8 @@ class WFSPB_F_FRONTEND_Frontend {
 		}
 		wp_add_inline_style( 'woocommerce-free-shipping-bar', $custom_css );
 		$params = array(
-			'mobile'          => $this->settings->get_params('detect-mobile') ? 1:'',
-			'ajax_url'          => admin_url( 'admin-ajax.php' ),
-			'nonce'             => wp_create_nonce( 'vifsb-nonce' ),
-			'html_refresh'      => [
+			'mobile'       => $this->settings->get_params( 'detect-mobile' ) ? 1 : '',
+			'html_refresh' => [
 				'#wfspb-main-content',
 				'#wfspb-main-content.wfspb-message-in-shop',
 				'#wfspb-main-content.wfspb-message-in-cart-checkout',
@@ -202,7 +201,7 @@ class WFSPB_F_FRONTEND_Frontend {
 		?>
 		<div id="wfspb-top-bar" class="<?php echo esc_attr( implode( ' ', $class_wrap ) ) ?>">
 			<div class="wfspb-lining-layer">
-				<?php echo wp_kses( $message, $this->settings::filter_allowed_html() ); ?>
+				<?php echo WFSPB_F_Data::kses_bar_html( $message ); ?>
 			</div>
 			<?php
 			if ( $this->settings->get_params( 'enable-progress' ) ) {

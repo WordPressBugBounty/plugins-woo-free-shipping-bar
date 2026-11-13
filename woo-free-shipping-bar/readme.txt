@@ -6,7 +6,7 @@ Requires at least: 5.0
 Tested up to: 7.1
 Requires PHP: 7.4
 WC requires at least: 7.0
-WC tested up to: 11.0
+WC tested up to: 11.2
 Stable tag: trunk
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -291,6 +291,16 @@ free shipping for order above 100 USD with customers from US. But if a customers
 6. Mini bar on single product page
 
 == Changelog ==
+2026.11.13 - version 1.3.4
+- Fixed: Resolve {cart_amount} placeholder with cart contents count
+- Fixed: Exclude shipping class cart loop guard and unused storefront localize keys
+- Fixed: Typo in current-amount DOM id, admin location notice, and success flag
+- Updated: Quote multi-word font-family values in inline CSS
+- Fixed: Sanitize bar message HTML on cart fragments and Store API output
+- Fixed: Sanitize design colors, font, and custom CSS before inline styles
+- Updated: Remove global fetch monkey-patch; cache shipping bar info per request
+- Updated: Compatibility check with WC 11.2
+
 2026.08.22 - version 1.3.3
 - Updated: Compatibility check with WP 7.1
 - Updated: VillaThem support

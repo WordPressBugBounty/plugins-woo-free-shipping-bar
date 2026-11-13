@@ -35,23 +35,24 @@
                     }, wc_block_cart_store_key )
                 }
             }
-        }if ($(`[data-block-name="woocommerce/product-button"]`).length && $(`[data-wp-on--click="actions.addCartItem"]`).length){
-            let originalFetch = window.fetch;
-            window.fetch = async function(...args) {
-                let response = await originalFetch.apply(this, args);
-                if (args[0] && typeof args[0] === 'string' && args[0].includes('/wc/store/v1/cart')) {
-                    let  clone = response.clone();
-                    clone.json().then(data => {
-                        let messages = data?.extensions?.wfspb_message;
-                        if (!messages){
-                            return;
-                        }
-                        $(document).triggerHandler('wfspb-refresh-message', [messages]);
-                    });
-                }
-                return response;
-            };
         }
+        // if ($(`[data-block-name="woocommerce/product-button"]`).length && $(`[data-wp-on--click="actions.addCartItem"]`).length){
+        //     let originalFetch = window.fetch;
+        //     window.fetch = async function(...args) {
+        //         let response = await originalFetch.apply(this, args);
+        //         if (args[0] && typeof args[0] === 'string' && args[0].includes('/wc/store/v1/cart')) {
+        //             let  clone = response.clone();
+        //             clone.json().then(data => {
+        //                 let messages = data?.extensions?.wfspb_message;
+        //                 if (!messages){
+        //                     return;
+        //                 }
+        //                 $(document).triggerHandler('wfspb-refresh-message', [messages]);
+        //             });
+        //         }
+        //         return response;
+        //     };
+        // }
         let shipping_bar_show_delay,shipping_bar_timeout;
         $(document).on('click', '.wfspb-gift-box', function () {
             $(document).trigger('wfspb-show-bar');

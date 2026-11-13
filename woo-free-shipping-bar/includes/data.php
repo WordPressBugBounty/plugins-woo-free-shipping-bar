@@ -2,7 +2,7 @@
 if ( ! class_exists( 'WFSPB_F_Data' ) ) {
 	class WFSPB_F_Data {
 		public $params, $default, $cache =[];
-        public static $instance = null,$allow_html = null;
+        public static $instance = null, $allow_html = null, $allow_html_bar = null;
         
         public static function get_instance( $new = false ) {
             if ( $new || null == self::$instance) {
@@ -111,7 +111,7 @@ if ( ! class_exists( 'WFSPB_F_Data' ) ) {
 					$result = str_replace( ['{missing_amount}','{shopping}'], [$missing_amount_html,$shopping], $result );
 				}else{
 					$result = $settings->get_params('message_purchased');
-					$current_total_html = '<b id="wfspb-current-amout">' . wc_price( $current_total ) . '</b>';
+					$current_total_html = '<b id="wfspb-current-amount">' . wc_price( $current_total ) . '</b>';
 					$min_amount_html = '<b id="wfspb_min_order_amount">' . wc_price( $min_amount ) . '</b>';
 					if ('incl' === get_option( 'woocommerce_tax_display_shop' ) && isset(wc()->cart) && !wc()->cart->display_prices_including_tax() ){
 						$missing_amount = $this->get_price_including_tax( $missing_amount );
@@ -194,6 +194,9 @@ if ( ! class_exists( 'WFSPB_F_Data' ) ) {
 			return $return_price;
 		}
 		public function get_shipping_bar_info(){
+			if ( array_key_exists( 'shipping_bar_info', $this->cache ) ) {
+				return $this->cache['shipping_bar_info'];
+			}
 			$settings = self::get_instance();
 			$result = [
 				'min_amount' => 0,
@@ -201,11 +204,11 @@ if ( ! class_exists( 'WFSPB_F_Data' ) ) {
 				'current_total' => 0,
 			];
 			if (!isset(WC()->cart) || ( !WC()->cart->is_empty() && !WC()->cart->needs_shipping())){
-				return apply_filters('wfspb_get_shipping_bar_info',[]);
+				return $this->cache['shipping_bar_info'] = apply_filters('wfspb_get_shipping_bar_info',[]);
 			}
 			$free_shipping_exist = $settings->get_free_shipping_zone();
 			if (!is_array($free_shipping_exist) || empty($free_shipping_exist)){
-				return apply_filters('wfspb_get_shipping_bar_info',[]);
+				return $this->cache['shipping_bar_info'] = apply_filters('wfspb_get_shipping_bar_info',[]);
 			}
 			if (isset(WC()->cart) && !empty(WC()->cart->get_applied_coupons())){
 				$applied_coupons = WC()->cart->get_applied_coupons();
@@ -218,14 +221,14 @@ if ( ! class_exists( 'WFSPB_F_Data' ) ) {
 					}
 				}
 				if ($coupon_free_shipping){
-					return apply_filters('wfspb_get_shipping_bar_info',$result);
+					return $this->cache['shipping_bar_info'] = apply_filters('wfspb_get_shipping_bar_info',$result);
 				}
 			}
 			$shipping_packages = WC()->cart->get_shipping_packages()[0]??[];
 			$shipping_destination = $shipping_packages['destination']??[];
 			$default_shipping_zone = $settings->get_params('default-zone');
 			if (empty($shipping_destination['country']) && ( !is_numeric($default_shipping_zone) || !isset($free_shipping_exist[$default_shipping_zone]) )){
-				return apply_filters('wfspb_get_shipping_bar_info',[]);
+				return $this->cache['shipping_bar_info'] = apply_filters('wfspb_get_shipping_bar_info',[]);
 			}
 			$country  = $shipping_destination['country']??'';
 			if (!$country){
@@ -319,7 +322,7 @@ if ( ! class_exists( 'WFSPB_F_Data' ) ) {
 				}
 			}
 			if (!is_numeric($free_shipping_zone)){
-				return apply_filters('wfspb_get_shipping_bar_info',[]);
+				return $this->cache['shipping_bar_info'] = apply_filters('wfspb_get_shipping_bar_info',[]);
 			}
 			$min_amount = floatval($result['min_amount']);
 			if ($min_amount > 0 && !WC()->cart->is_empty()){
@@ -340,7 +343,7 @@ if ( ! class_exists( 'WFSPB_F_Data' ) ) {
 				if ( ! empty( $exclude_shipping ) ) {
 					$cart_items =  WC()->cart->get_cart();
 					$total_exclude = 0;
-					if (is_array($cart_items) || !empty($cart_items)){
+					if ( is_array( $cart_items ) && ! empty( $cart_items ) ) {
 						foreach ($cart_items as $item){
 							if ( !empty($item['data']) && in_array( $item['data']->get_shipping_class_id(), $exclude_shipping ) ) {
 								$total_exclude += $item['data']->get_price() * $item['quantity'];
@@ -351,8 +354,9 @@ if ( ! class_exists( 'WFSPB_F_Data' ) ) {
 				}
 				$result['current_total'] =  round($current_total, wc_get_price_decimals() );
 				$result['current_percent'] = ( $current_total * 100 ) / $min_amount ;
+				$result['cart_contents_count'] = WC()->cart->get_cart_contents_count();
 			}
-			return apply_filters('wfspb_get_shipping_bar_info',$result);
+			return $this->cache['shipping_bar_info'] = apply_filters('wfspb_get_shipping_bar_info',$result);
 		}
 		public function get_shipping_countries($region){
 			if (isset($this->cache['get_shipping_countries'][$region])){
@@ -426,6 +430,137 @@ if ( ! class_exists( 'WFSPB_F_Data' ) ) {
 			$this->cache['woo_shipping_zone'] = apply_filters( 'wfspb_get_woo_shipping_zone',$zone_exist);
 			return $this->cache['woo_shipping_zone'];
 		}
+		/**
+		 * Allowlist for storefront bar message HTML (no iframe/video/source).
+		 *
+		 * @return array
+		 */
+		public static function filter_allowed_html_bar() {
+			if ( self::$allow_html_bar ) {
+				return self::$allow_html_bar;
+			}
+			$allowed = wp_kses_allowed_html( 'post' );
+			unset( $allowed['iframe'], $allowed['video'], $allowed['source'], $allowed['audio'], $allowed['embed'], $allowed['object'] );
+			foreach ( array( 'div', 'span', 'a', 'b', 'strong' ) as $tag ) {
+				$base            = ( isset( $allowed[ $tag ] ) && is_array( $allowed[ $tag ] ) ) ? $allowed[ $tag ] : array();
+				$allowed[ $tag ] = array_merge(
+					$base,
+					array(
+						'class'  => true,
+						'id'     => true,
+						'style'  => true,
+						'data-*' => true,
+					)
+				);
+			}
+			if ( isset( $allowed['a'] ) && is_array( $allowed['a'] ) ) {
+				$allowed['a']['href']   = true;
+				$allowed['a']['title']  = true;
+				$allowed['a']['target'] = true;
+				$allowed['a']['rel']    = true;
+			}
+			self::$allow_html_bar = $allowed;
+
+			return self::$allow_html_bar;
+		}
+
+		/**
+		 * @param string $html Bar message HTML.
+		 *
+		 * @return string
+		 */
+		public static function kses_bar_html( $html ) {
+			return wp_kses( (string) $html, self::filter_allowed_html_bar() );
+		}
+
+		/**
+		 * @param mixed $color Color option value.
+		 *
+		 * @return string Safe CSS color or empty string.
+		 */
+		public static function sanitize_css_color( $color ) {
+			$color = is_string( $color ) ? trim( $color ) : '';
+			if ( '' === $color ) {
+				return '';
+			}
+			$hex = sanitize_hex_color( $color );
+			if ( $hex ) {
+				return $hex;
+			}
+			if ( preg_match( '/^rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*(?:,\s*(0|1|0?\.\d+)\s*)?\)$/i', $color, $m ) ) {
+				$r = min( 255, absint( $m[1] ) );
+				$g = min( 255, absint( $m[2] ) );
+				$b = min( 255, absint( $m[3] ) );
+				if ( isset( $m[4] ) && '' !== $m[4] ) {
+					return sprintf( 'rgba(%d,%d,%d,%s)', $r, $g, $b, $m[4] );
+				}
+
+				return sprintf( 'rgb(%d,%d,%d)', $r, $g, $b );
+			}
+
+			return '';
+		}
+
+		/**
+		 * @param mixed $font Font family / Google Fonts slug.
+		 *
+		 * @return string
+		 */
+		public static function sanitize_font_family( $font ) {
+			$font = is_string( $font ) ? $font : '';
+			$font = preg_replace( '/[^a-zA-Z0-9+\-\s]/', '', $font );
+
+			return is_string( $font ) ? trim( $font ) : '';
+		}
+
+		/**
+		 * Format a sanitized font family for CSS font-family emission.
+		 *
+		 * @param string $font Sanitized font family (may contain spaces).
+		 *
+		 * @return string
+		 */
+		public static function css_font_family_value( $font ) {
+			$font = is_string( $font ) ? trim( $font ) : '';
+			if ( $font === '' ) {
+				return '';
+			}
+			if ( false !== strpos( $font, ' ' ) ) {
+				return '"' . $font . '"';
+			}
+
+			return $font;
+		}
+
+		/**
+		 * @param mixed $css Custom CSS option value.
+		 *
+		 * @return string
+		 */
+		public static function sanitize_custom_css( $css ) {
+			$css = is_string( $css ) ? wp_unslash( $css ) : '';
+			$css = wp_strip_all_tags( $css );
+			$css = preg_replace( '/@import\b[^;]*;?/i', '', $css );
+			$css = preg_replace( '/\bexpression\s*\(/i', '', is_string( $css ) ? $css : '' );
+			$css = preg_replace( '/\bbehavior\s*:/i', '', is_string( $css ) ? $css : '' );
+			$css = preg_replace( '/-moz-binding\s*:/i', '', is_string( $css ) ? $css : '' );
+			$css = preg_replace( '/\burl\s*\(/i', '', is_string( $css ) ? $css : '' );
+			$css = str_ireplace( array( '</style>', '<style' ), '', is_string( $css ) ? $css : '' );
+
+			return is_string( $css ) ? $css : '';
+		}
+
+		/**
+		 * @param mixed $align Text align option.
+		 *
+		 * @return string
+		 */
+		public static function sanitize_text_align( $align ) {
+			$align = is_string( $align ) ? strtolower( trim( $align ) ) : '';
+
+			return in_array( $align, array( 'left', 'center', 'right' ), true ) ? $align : 'center';
+		}
+
 		/**
 		 * @param $tags
 		 *

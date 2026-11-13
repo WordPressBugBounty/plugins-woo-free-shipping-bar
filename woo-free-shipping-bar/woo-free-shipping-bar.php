@@ -3,7 +3,7 @@
  * Plugin Name: Freetop – Free Shipping Bar for WooCommerce
  * Plugin URI: https://villatheme.com/
  * Description: Motivate customers to reach the free shipping threshold with a visual free shipping bar, dynamic messages and progress tracker.
- * Version: 1.3.3
+ * Version: 1.3.4
  * Author: VillaTheme
  * Author URI: https://villatheme.com
  * License: GPLv2
@@ -15,7 +15,7 @@
  * Requires at least: 5.0
  * Tested up to: 7.1
  * WC requires at least: 7.0
- * WC tested up to: 11.0
+ * WC tested up to: 11.2
  * Requires PHP: 7.4
  */
 
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if (!defined('WFSPB_F_VERSION')){
-	define( 'WFSPB_F_VERSION', '1.3.3' );
+	define( 'WFSPB_F_VERSION', '1.3.4' );
 	define( 'WFSPB_F_SHIPPING_BASENAME', plugin_basename( __FILE__ ) );
 	define( 'WFSPB_F_SHIPPING_DIR', plugin_dir_path( __FILE__ ) );
 	define( 'WFSPB_F_SHIPPING_INCLUDES', WFSPB_F_SHIPPING_DIR . "includes" . DIRECTORY_SEPARATOR );
@@ -61,7 +61,7 @@ if ( ! class_exists( 'WFSPB_F_Shipping' ) ) {
 			}
 			$environment = new \VillaTheme_Require_Environment( [
 				'plugin_name'     => 'Free Shipping Bar for WooCommerce',
-				'php_version'     => '7.0',
+				'php_version'     => '7.4',
 				'wp_version'      => '5.0',
 				'require_plugins' => [
 					[

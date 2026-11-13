@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class WFSPB_F_ADMIN_Settings {
 	protected $settings;
-	protected $updated_sucessfully, $error;
+	protected $updated_successfully, $error;
 	public function __construct() {
 		$this->settings         = WFSPB_F_Data::get_instance();
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_script') );
@@ -86,17 +86,17 @@ class WFSPB_F_ADMIN_Settings {
 			array( 0 ),
 		);
 		//inline style Style tab
-		$bg_color            = $this->settings->get_params( 'bg-color' );
-		$text_color          = $this->settings->get_params( 'text-color' );
-		$link_color          = $this->settings->get_params( 'link-color' );
-		$text_align          =$this->settings->get_params( 'text-align' );
-		$font                = $this->settings->get_params( 'font' );
-		$font_size           = $this->settings->get_params( 'font-size' );
-		$font_family         = str_replace( '+', ' ', $font );
-		$bg_progress         = $this->settings->get_params( 'bg-color-progress' );
-		$bg_current_progress = $this->settings->get_params( 'bg-current-progress' );
-		$progress_text_color = $this->settings->get_params( 'progress-text-color' );
-		$fontsize_progress   = $this->settings->get_params( 'font-size-progress' );
+		$bg_color            = WFSPB_F_Data::sanitize_css_color( $this->settings->get_params( 'bg-color' ) );
+		$text_color          = WFSPB_F_Data::sanitize_css_color( $this->settings->get_params( 'text-color' ) );
+		$link_color          = WFSPB_F_Data::sanitize_css_color( $this->settings->get_params( 'link-color' ) );
+		$text_align          = WFSPB_F_Data::sanitize_text_align( $this->settings->get_params( 'text-align' ) );
+		$font                = WFSPB_F_Data::sanitize_font_family( $this->settings->get_params( 'font' ) );
+		$font_size           = absint( $this->settings->get_params( 'font-size' ) );
+		$font_family         = WFSPB_F_Data::css_font_family_value( str_replace( '+', ' ', $font ) );
+		$bg_progress         = WFSPB_F_Data::sanitize_css_color( $this->settings->get_params( 'bg-color-progress' ) );
+		$bg_current_progress = WFSPB_F_Data::sanitize_css_color( $this->settings->get_params( 'bg-current-progress' ) );
+		$progress_text_color = WFSPB_F_Data::sanitize_css_color( $this->settings->get_params( 'progress-text-color' ) );
+		$fontsize_progress   = absint( $this->settings->get_params( 'font-size-progress' ) );
 
 		$custom_css = "
 					#wfspb-top-bar{
@@ -158,7 +158,7 @@ class WFSPB_F_ADMIN_Settings {
 			if ( $this->error  ) {
 				printf( '<div id="message" class="error"><p><strong>%s</strong></p></div>', esc_html(  $this->error ) );
 			}
-			if ( $this->updated_sucessfully  ) {
+			if ( $this->updated_successfully  ) {
 				printf( '<div id="message" class="updated"><p><strong>%s</strong></p></div>', esc_html__( 'Your settings have been saved!', 'woo-free-shipping-bar' ) );
 			}
 			$check_woo_shipping_zone =$this->settings->check_woo_shipping_zone();
@@ -175,7 +175,7 @@ class WFSPB_F_ADMIN_Settings {
 						$link  = admin_url( 'admin.php?page=wc-settings&tab=shipping' );
 						$mess0 = esc_html__( 'WooCommerce Shipping settings', 'woo-free-shipping-bar' );
 						$mess1 = esc_html__( 'Please go to', 'woo-free-shipping-bar' );
-						$mess2 = esc_html__( 'and then Add New a Shipping Zone with Free Shipping method (or Enable Free Shipping method) for your locationn before setting up the free shipping bar.', 'woo-free-shipping-bar' );
+						$mess2 = esc_html__( 'and then Add New a Shipping Zone with Free Shipping method (or Enable Free Shipping method) for your location before setting up the free shipping bar.', 'woo-free-shipping-bar' );
 						echo wp_kses_post( sprintf( "%s <a href='%s' target='_blank'>%s</a> %s", $mess1, esc_url( $link ), $mess0, $mess2 ) );
 						?>
 					</p>
@@ -827,7 +827,7 @@ class WFSPB_F_ADMIN_Settings {
 		$woocommerce_free_shipping_settings = $args;
 		update_option( 'wfspb-param', $args);
 		$this->settings = WFSPB_F_Data::get_instance(true);
-		$this->updated_sucessfully = 1;
+		$this->updated_successfully = 1;
 	}
 
 	public static function set_field( $field, $multi = false ) {
